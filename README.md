@@ -1,5 +1,9 @@
 # ERP-System
 
+<p align="center">
+  <img src="./assets/images/splash.png" alt="ERP-System Logo" width="300">
+</p>
+
 Un sistema móvil de gestión empresarial (ERP) diseñado para el control completo de inventario, ventas y compras con proveedores.
 
 ## 📋 Descripción del Negocio
@@ -143,12 +147,18 @@ npm run web
 ## 📱 Funcionalidades Principales
 
 ### 🔐 Autenticación
+<p align="center">
+  <img src="./assets/images/login.png" alt="Pantalla de Login" width="300">
+</p>
 - Registro de usuarios
 - Login seguro
 - Recuperación de contraseña
 - Almacenamiento seguro de tokens
 
 ### 🏠 Dashboard
+<p align="center">
+  <img src="./assets/images/home.png" alt="Pantalla Principal" width="300">
+</p>
 - Vista general del negocio
 - Estadísticas rápidas
 - Acceso directo a módulos principales
@@ -160,6 +170,9 @@ npm run web
 - Búsqueda y filtrado
 
 ### 📷 Escáner de Barras
+<p align="center">
+  <img src="./assets/images/scanner.png" alt="Escáner de Productos" width="300">
+</p>
 - Activación de cámara
 - Detección automática de códigos
 - Feedback visual y sonoro
