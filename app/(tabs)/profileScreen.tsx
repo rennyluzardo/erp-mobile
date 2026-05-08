@@ -34,15 +34,15 @@ export default function ProfileScreen() {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Perfil</Text>
-      {profileData ? (
-        <View style={styles.profileInfo}>
-          <Text style={styles.label}>Usuario:</Text>
-          <Text style={styles.value}>{profileData?.username || 'N/A'}</Text>
-        </View>
-      ) : (
-        <Text>Cargando perfil...</Text>
-      )}
+      <View style={styles.content}>
+        <Text style={styles.title}>Perfil</Text>
+        {profileData && (
+          <View style={styles.profileInfo}>
+            <Text style={styles.label}>Usuario:</Text>
+            <Text style={styles.value}>{profileData?.username || 'N/A'}</Text>
+          </View>
+        )}
+      </View>
       <TouchableOpacity style={styles.primaryButton} onPress={handleLogout}>
         <Text style={styles.primaryButtonText}>Cerrar sesión</Text>
       </TouchableOpacity>
@@ -53,9 +53,14 @@ export default function ProfileScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
+    justifyContent: 'space-between',
     alignItems: 'center',
     padding: 20,
+  },
+  content: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   title: {
     fontSize: 24,
@@ -84,7 +89,6 @@ const styles = StyleSheet.create({
     paddingVertical: 12,
     alignItems: 'center',
     justifyContent: 'center',
-    marginBottom: 10,
     width: '100%',
   },
   primaryButtonText: {
