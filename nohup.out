@@ -1,0 +1,911 @@
+INFO         | Android emulator version 35.4.9.0 (build_id 13025442) (CL:N/A)
+INFO         | Graphics backend: gfxstream
+INFO         | Found systemPath /opt/homebrew/share/android-commandlinetools/system-images/android-30/google_apis/x86_64/
+PANIC: Avd's CPU Architecture 'x86_64' is not supported by the QEMU2 emulator on aarch64 host.
+INFO         | Android emulator version 35.4.9.0 (build_id 13025442) (CL:N/A)
+INFO         | Graphics backend: gfxstream
+INFO         | Found systemPath /opt/homebrew/share/android-commandlinetools/system-images/android-30/google_apis/x86_64/
+PANIC: Avd's CPU Architecture 'x86_64' is not supported by the QEMU2 emulator on aarch64 host.
+INFO         | Android emulator version 35.4.9.0 (build_id 13025442) (CL:N/A)
+INFO         | Graphics backend: gfxstream
+INFO         | Found systemPath /opt/homebrew/share/android-commandlinetools/system-images/android-36/google_apis_playstore/arm64-v8a/
+WARNING      | Please update the emulator to one that supports the feature(s): VulkanVirtualQueue
+INFO         | Checking system compatibility:
+INFO         |   Checking: hasSufficientDiskSpace
+INFO         |      Ok: Disk space requirements to run avd: `Medium_Phone_API_36` are met
+INFO         |   Checking: hasSufficientHwGpu
+INFO         |      Ok: Hardware GPU requirements to run avd: `Medium_Phone_API_36` are passed
+INFO         |   Checking: hasSufficientSystem
+INFO         |      Ok: System requirements to run avd: `Medium_Phone_API_36` are met
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_btn_xr_environment_living_room_day_clicked() (:0, )
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_btn_xr_environment_living_room_night_clicked() (:0, )
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_new_posture_requested(int) (:0, )
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_dismiss_posture_selection_dialog() (:0, )
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_new_resizable_requested(PresetEmulatorSizeType) (:0, )
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_dismiss_resizable_dialog() (:0, )
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_xr_environment_mode_changed(int) (:0, )
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_dismiss_xr_environment_mode_dialog() (:0, )
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_xr_input_mode_changed(int) (:0, )
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_dismiss_xr_input_mode_dialog() (:0, )
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_sleep_timer_done() (:0, )
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_unfold_timer_done() (:0, )
+INFO         | Storing crashdata in: /tmp/android-rennyluzardo/emu-crash-35.4.9.db, detection is enabled for process: 10220
+INFO         | Guest Driver: Auto (ext controls)
+library_mode host gpu mode host
+INFO         | Initializing hardware OpenGLES emulation support
+I0525 19:21:49.959038 65c9f00 opengles.cpp:285] android_startOpenglesRenderer: gpu info
+I0525 19:21:49.959050 65c9f00 opengles.cpp:286] 
+INFO         | HealthMonitor disabled.
+INFO         | initIcdPaths: ICD set to 'swiftshader', using Swiftshader ICD
+INFO         | Setting ICD filenames for the loader = /opt/homebrew/share/android-commandlinetools/emulator/qemu/darwin-aarch64/lib64/vulkan/vk_swiftshader_icd.json:/opt/homebrew/share/android-commandlinetools/emulator/lib64/vulkan/vk_swiftshader_icd.json
+INFO         | SharedLibrary::open for [/opt/homebrew/share/android-commandlinetools/emulator/qemu/darwin-aarch64/lib64/vulkan/libvulkan.dylib]
+
+INFO         | SharedLibrary::open for [/opt/homebrew/share/android-commandlinetools/emulator/qemu/darwin-aarch64/lib64/vulkan/libvulkan.dylib]: not found in map, open for the first time
+
+INFO         | SharedLibrary::open for [/opt/homebrew/share/android-commandlinetools/emulator/qemu/darwin-aarch64/lib64/vulkan/libvulkan.dylib] (posix): begin
+
+INFO         | SharedLibrary::open for [/opt/homebrew/share/android-commandlinetools/emulator/qemu/darwin-aarch64/lib64/vulkan/libvulkan.dylib] (posix,darwin): call dlopen
+
+INFO         | SharedLibrary::open for [/opt/homebrew/share/android-commandlinetools/emulator/qemu/darwin-aarch64/lib64/vulkan/libvulkan.dylib] (posix,darwin): failed, try again with [/opt/homebrew/share/android-commandlinetools/emulator/qemu/darwin-aarch64/lib64/vulkan/libvulkan.dylib]
+
+INFO         | SharedLibrary::open for [/opt/homebrew/share/android-commandlinetools/emulator/qemu/darwin-aarch64/lib64/vulkan/libvulkan.dylib] failed (posix). dlerror: []
+
+INFO         | SharedLibrary::open for [/opt/homebrew/share/android-commandlinetools/emulator/lib64/vulkan/libvulkan.dylib]
+
+INFO         | SharedLibrary::open for [/opt/homebrew/share/android-commandlinetools/emulator/lib64/vulkan/libvulkan.dylib]: not found in map, open for the first time
+
+INFO         | SharedLibrary::open for [/opt/homebrew/share/android-commandlinetools/emulator/lib64/vulkan/libvulkan.dylib] (posix): begin
+
+INFO         | SharedLibrary::open for [/opt/homebrew/share/android-commandlinetools/emulator/lib64/vulkan/libvulkan.dylib] (posix,darwin): call dlopen
+
+INFO         | Added library: /opt/homebrew/share/android-commandlinetools/emulator/lib64/vulkan/libvulkan.dylib
+INFO         | Selecting Vulkan device: SwiftShader Device (LLVM 10.0.0), Version: 1.2.0
+INFO         | Supports id properties, got a vulkan device UUID
+INFO         | SharedLibrary::open for [/System/Library/Frameworks/OpenGL.framework/OpenGL]: not found in map, open for the first time
+
+INFO         | SharedLibrary::open for [/System/Library/Frameworks/OpenGL.framework/OpenGL] (posix): begin
+
+INFO         | SharedLibrary::open for [/System/Library/Frameworks/OpenGL.framework/OpenGL] (posix,darwin): call dlopen
+
+INFO         | SharedLibrary::open for [libshadertranslator.dylib]: not found in map, open for the first time
+
+INFO         | SharedLibrary::open for [libshadertranslator.dylib] (posix): begin
+
+INFO         | SharedLibrary::open for [libshadertranslator.dylib] (posix,darwin): call dlopen
+
+INFO         | Initializing VkEmulation features:
+INFO         |     glInteropSupported: false
+INFO         |     useDeferredCommands: true
+INFO         |     createResourceWithRequirements: true
+INFO         |     useVulkanComposition: false
+INFO         |     useVulkanNativeSwapchain: false
+INFO         |     enable guestRenderDoc: false
+INFO         |     ASTC LDR emulation mode: 2
+INFO         |     enable ETC2 emulation: true
+INFO         |     enable Ycbcr emulation: false
+INFO         |     guestVulkanOnly: false
+INFO         |     useDedicatedAllocations: false
+INFO         | Graphics Adapter Vendor Google (Apple)
+INFO         | Graphics Adapter Android Emulator OpenGL ES Translator (Apple M2)
+INFO         | Graphics API Version OpenGL ES 3.0 (4.1 Metal - 89.4)
+INFO         | Graphics API Extensions GL_OES_EGL_sync GL_OES_EGL_image GL_OES_EGL_image_external GL_OES_depth24 GL_OES_depth32 GL_OES_element_index_uint GL_OES_texture_float GL_OES_texture_float_linear GL_OES_compressed_paletted_texture GL_OES_compressed_ETC1_RGB8_texture GL_OES_depth_texture GL_OES_texture_npot GL_OES_rgb8_rgba8 GL_EXT_color_buffer_float GL_EXT_color_buffer_half_float GL_EXT_texture_format_BGRA8888 GL_APPLE_texture_format_BGRA8888 
+INFO         | Graphics Device Extensions N/A
+INFO         | Sending adb public key [QAAAAHEatoNvmY1e5AVDipKm2qlQz6lIeZcBnjwiMli8uy4IlxjnTGOWxYDfBkOcC3EL/B1GNY1/mnr/0tQKaSUw4nn8vM0PHTHwYNHa53mKFpQ73xc2bOJUOoh1tC/h547efNqZ5UUk1sBxqQE/bTQNR2owGIZZcPBND9eRpMzVq9KDgoHRCBXP4fBqd9lRaysSrZp2NMokwrkpHf4WhmetzQK7Y1kOGmyxKENkNWMGJcrq6IWOMcqJLyowG5ylgRW1dl8Jmhl3w0sdrMCbCVulx4t16zMnXCORTiOvJacx19GJ1NKQUkZqootJgzfu36fh7SoLKEuJvb/9RpCiYSsHrVSfeC+6oZ9gmevGZq++kERRqTIVmygXzF3EAN98jyBfm2xtITkBjSZeiJoF0nKYheX1lahhpp70DkqwyqNuAOlx++OF3GhKHV/HIsy/uQNrdm630QWk6c90HLAuDVSBEIADBxYhQOYDqtZwjrOkPBfC9eWiEF2veaZFqc4vFYKB3KLDoKh0AHfUcvf1yKKYcPHuoNkV+eHtjulkiHPdRGC+U/K9AsrMlWP8xSl/j+W8gFlIBs9R+W5qcyVA18DAVxbuM3pxgcVs34UJHpqnUEnDVpGctZDwePywOXyPjbde6iXiaT8pv2pCZUg9Aw1sAX5aMapdm0q40/xR3IfLGecA0Je9hwEAAQA= rennyluzardo@unknown]
+INFO         | Userspace boot properties:
+INFO         |   androidboot.boot_devices=a003600.virtio_mmio
+INFO         |   androidboot.dalvik.vm.heapsize=512m
+INFO         |   androidboot.debug.hwui.renderer=skiagl
+INFO         |   androidboot.hardware=ranchu
+INFO         |   androidboot.hardware.gltransport=pipe
+INFO         |   androidboot.hardware.vulkan=ranchu
+INFO         |   androidboot.logcat=*:V
+INFO         |   androidboot.opengles.version=196608
+INFO         |   androidboot.qemu=1
+INFO         |   androidboot.qemu.adb.pubkey=QAAAAHEatoNvmY1e5AVDipKm2qlQz6lIeZcBnjwiMli8uy4IlxjnTGOWxYDfBkOcC3EL/B1GNY1/mnr/0tQKaSUw4nn8vM0PHTHwYNHa53mKFpQ73xc2bOJUOoh1tC/h547efNqZ5UUk1sBxqQE/bTQNR2owGIZZcPBND9eRpMzVq9KDgoHRCBXP4fBqd9lRaysSrZp2NMokwrkpHf4WhmetzQK7Y1kOGmyxKENkNWMGJcrq6IWOMcqJLyowG5ylgRW1dl8Jmhl3w0sdrMCbCVulx4t16zMnXCORTiOvJacx19GJ1NKQUkZqootJgzfu36fh7SoLKEuJvb/9RpCiYSsHrVSfeC+6oZ9gmevGZq++kERRqTIVmygXzF3EAN98jyBfm2xtITkBjSZeiJoF0nKYheX1lahhpp70DkqwyqNuAOlx++OF3GhKHV/HIsy/uQNrdm630QWk6c90HLAuDVSBEIADBxYhQOYDqtZwjrOkPBfC9eWiEF2veaZFqc4vFYKB3KLDoKh0AHfUcvf1yKKYcPHuoNkV+eHtjulkiHPdRGC+U/K9AsrMlWP8xSl/j+W8gFlIBs9R+W5qcyVA18DAVxbuM3pxgcVs34UJHpqnUEnDVpGctZDwePywOXyPjbde6iXiaT8pv2pCZUg9Aw1sAX5aMapdm0q40/xR3IfLGecA0Je9hwEAAQA= rennyluzardo@unknown
+INFO         |   androidboot.qemu.avd_name=Medium_Phone_API_36
+INFO         |   androidboot.qemu.camera_hq_edge_processing=0
+INFO         |   androidboot.qemu.camera_protocol_ver=1
+INFO         |   androidboot.qemu.cpuvulkan.version=4202496
+INFO         |   androidboot.qemu.gltransport.drawFlushInterval=800
+INFO         |   androidboot.qemu.gltransport.name=pipe
+INFO         |   androidboot.qemu.hwcodec.avcdec=2
+INFO         |   androidboot.qemu.hwcodec.hevcdec=2
+INFO         |   androidboot.qemu.hwcodec.vpxdec=2
+INFO         |   androidboot.qemu.settings.system.screen_off_timeout=2147483647
+INFO         |   androidboot.qemu.virtiowifi=1
+INFO         |   androidboot.qemu.vsync=60
+INFO         |   androidboot.serialno=EMULATOR35X4X9X0
+INFO         |   androidboot.vbmeta.digest=499884d30783a384ac37278306ff7a9d573a5865d75af3e2347e0e5c41cd76cd
+INFO         |   androidboot.vbmeta.hash_alg=sha256
+INFO         |   androidboot.vbmeta.size=6720
+INFO         |   androidboot.veritymode=enforcing
+INFO         | Monitoring duration of emulator setup.
+WARNING      | The emulator now requires a signed jwt token for gRPC access! Use the -grpc flag if you really want an open unprotected grpc port
+INFO         | Using security allow list from: /opt/homebrew/share/android-commandlinetools/emulator/lib/emulator_access.json
+WARNING      | *** Basic token auth should only be used by android-studio ***
+INFO         | The active JSON Web Key Sets can be found here: /Users/rennyluzardo/Library/Caches/TemporaryItems/avd/running/10220/jwks/830dbd04-a5cc-424d-94c3-ee18283e6e3d/active.jwk
+INFO         | Scanning /Users/rennyluzardo/Library/Caches/TemporaryItems/avd/running/10220/jwks/830dbd04-a5cc-424d-94c3-ee18283e6e3d for jwk keys.
+INFO         | Started GRPC server at 127.0.0.1:8554, security: Local, auth: +token
+INFO         | Advertising in: /Users/rennyluzardo/Library/Caches/TemporaryItems/avd/running/pid_10220.ini
+INFO         | Setting display: 0 configuration to: 1080x2400, dpi: 420x420 
+INFO         | setDisplayActiveConfig 0
+INFO         | Checking system compatibility:
+INFO         |   Checking: hasSufficientDiskSpace
+INFO         |      Ok: Disk space requirements to run avd: `Medium_Phone_API_36` are met
+INFO         |   Checking: hasSufficientHwGpu
+INFO         |      Ok: Hardware GPU requirements to run avd: `Medium_Phone_API_36` are passed
+INFO         |   Checking: hasSufficientSystem
+INFO         |      Ok: System requirements to run avd: `Medium_Phone_API_36` are met
+INFO         | Loading snapshot 'default_boot'...
+WARNING      | Device 'encrypt' does not have the requested snapshot 'default_boot'
+
+WARNING      | Failed to load snapshot 'default_boot'
+INFO         | Activated packet streamer for uwb emulation
+INFO         | Activated packet streamer for bluetooth emulation
+INFO         | Boot completed in 13742 ms
+INFO         | Increasing screen off timeout, logcat buffer size to 2M.
+INFO         | Created VkInstance:0x118392e00 for application: engine:.
+ERROR        | bad color buffer handle 0x109
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_rgbcSensorValueWidget_valueChanged() (:0, )
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_posture_valueChanged(int) (:0, )
+INFO         | AVD supportsNativeGLES=1, supportsGuestAngle=1
+/Volumes/Android/buildbot/src/android/emu-35-4-release/hardware/google/gfxstream/host/gl/glestranslator/GLES_V2/GLESv2Imp.cpp:glAttachShader:520 error 0x502
+/Volumes/Android/buildbot/src/android/emu-35-4-release/hardware/google/gfxstream/host/gl/glestranslator/GLES_V2/GLESv2Imp.cpp:glAttachShader:520 error 0x502
+/Volumes/Android/buildbot/src/android/emu-35-4-release/hardware/google/gfxstream/host/gl/glestranslator/GLES_V2/GLESv2Imp.cpp:glAttachShader:520 error 0x502
+/Volumes/Android/buildbot/src/android/emu-35-4-release/hardware/google/gfxstream/host/gl/glestranslator/GLES_V2/GLESv2Imp.cpp:glAttachShader:520 error 0x502
+/Volumes/Android/buildbot/src/android/emu-35-4-release/hardware/google/gfxstream/host/gl/glestranslator/GLES_V2/GLESv2Imp.cpp:glAttachShader:520 error 0x502
+/Volumes/Android/buildbot/src/android/emu-35-4-release/hardware/google/gfxstream/host/gl/glestranslator/GLES_V2/GLESv2Imp.cpp:glAttachShader:520 error 0x502
+/Volumes/Android/buildbot/src/android/emu-35-4-release/hardware/google/gfxstream/host/gl/glestranslator/GLES_V2/GLESv2Imp.cpp:glAttachShader:520 error 0x502
+/Volumes/Android/buildbot/src/android/emu-35-4-release/hardware/google/gfxstream/host/gl/glestranslator/GLES_V2/GLESv2Imp.cpp:glAttachShader:520 error 0x502
+INFO         | Wait for emulator (pid 10220) 20 seconds to shutdown gracefully before kill;you can set environment variable ANDROID_EMULATOR_WAIT_TIME_BEFORE_KILL(in seconds) to change the default value (20 seconds)
+
+INFO         | Wait for emulator (pid 10220) 20 seconds to shutdown gracefully before kill;you can set environment variable ANDROID_EMULATOR_WAIT_TIME_BEFORE_KILL(in seconds) to change the default value (20 seconds)
+
+WARNING      | Not saving state: current state does not support snapshotting
+INFO         | Deleting snapshot default_boot
+INFO         | Android emulator version 35.4.9.0 (build_id 13025442) (CL:N/A)
+INFO         | Graphics backend: gfxstream
+INFO         | Found systemPath /opt/homebrew/share/android-commandlinetools/system-images/android-36/google_apis_playstore/arm64-v8a/
+WARNING      | Please update the emulator to one that supports the feature(s): VulkanVirtualQueue
+INFO         | Increasing RAM size to 2048MB
+INFO         | Checking system compatibility:
+INFO         |   Checking: hasSufficientDiskSpace
+INFO         |      Ok: Disk space requirements to run avd: `Papaleco2` are met
+INFO         |   Checking: hasSufficientHwGpu
+INFO         |      Ok: Hardware GPU requirements to run avd: `Papaleco2` are passed
+INFO         |   Checking: hasSufficientSystem
+INFO         |      Ok: System requirements to run avd: `Papaleco2` are met
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_btn_xr_environment_living_room_day_clicked() (:0, )
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_btn_xr_environment_living_room_night_clicked() (:0, )
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_new_posture_requested(int) (:0, )
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_dismiss_posture_selection_dialog() (:0, )
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_new_resizable_requested(PresetEmulatorSizeType) (:0, )
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_dismiss_resizable_dialog() (:0, )
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_xr_environment_mode_changed(int) (:0, )
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_dismiss_xr_environment_mode_dialog() (:0, )
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_xr_input_mode_changed(int) (:0, )
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_dismiss_xr_input_mode_dialog() (:0, )
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_sleep_timer_done() (:0, )
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_unfold_timer_done() (:0, )
+INFO         | Storing crashdata in: /tmp/android-rennyluzardo/emu-crash-35.4.9.db, detection is enabled for process: 5738
+INFO         | Guest Driver: Auto (ext controls)
+library_mode host gpu mode host
+INFO         | Initializing hardware OpenGLES emulation support
+I0530 13:17:32.582632 0f05f00 opengles.cpp:285] android_startOpenglesRenderer: gpu info
+I0530 13:17:32.582656 0f05f00 opengles.cpp:286] 
+INFO         | HealthMonitor disabled.
+INFO         | initIcdPaths: ICD set to 'swiftshader', using Swiftshader ICD
+INFO         | Setting ICD filenames for the loader = /opt/homebrew/share/android-commandlinetools/emulator/qemu/darwin-aarch64/lib64/vulkan/vk_swiftshader_icd.json:/opt/homebrew/share/android-commandlinetools/emulator/lib64/vulkan/vk_swiftshader_icd.json
+INFO         | SharedLibrary::open for [/opt/homebrew/share/android-commandlinetools/emulator/qemu/darwin-aarch64/lib64/vulkan/libvulkan.dylib]
+
+INFO         | SharedLibrary::open for [/opt/homebrew/share/android-commandlinetools/emulator/qemu/darwin-aarch64/lib64/vulkan/libvulkan.dylib]: not found in map, open for the first time
+
+INFO         | SharedLibrary::open for [/opt/homebrew/share/android-commandlinetools/emulator/qemu/darwin-aarch64/lib64/vulkan/libvulkan.dylib] (posix): begin
+
+INFO         | SharedLibrary::open for [/opt/homebrew/share/android-commandlinetools/emulator/qemu/darwin-aarch64/lib64/vulkan/libvulkan.dylib] (posix,darwin): call dlopen
+
+INFO         | SharedLibrary::open for [/opt/homebrew/share/android-commandlinetools/emulator/qemu/darwin-aarch64/lib64/vulkan/libvulkan.dylib] (posix,darwin): failed, try again with [/opt/homebrew/share/android-commandlinetools/emulator/qemu/darwin-aarch64/lib64/vulkan/libvulkan.dylib]
+
+INFO         | SharedLibrary::open for [/opt/homebrew/share/android-commandlinetools/emulator/qemu/darwin-aarch64/lib64/vulkan/libvulkan.dylib] failed (posix). dlerror: []
+
+INFO         | SharedLibrary::open for [/opt/homebrew/share/android-commandlinetools/emulator/lib64/vulkan/libvulkan.dylib]
+
+INFO         | SharedLibrary::open for [/opt/homebrew/share/android-commandlinetools/emulator/lib64/vulkan/libvulkan.dylib]: not found in map, open for the first time
+
+INFO         | SharedLibrary::open for [/opt/homebrew/share/android-commandlinetools/emulator/lib64/vulkan/libvulkan.dylib] (posix): begin
+
+INFO         | SharedLibrary::open for [/opt/homebrew/share/android-commandlinetools/emulator/lib64/vulkan/libvulkan.dylib] (posix,darwin): call dlopen
+
+INFO         | Added library: /opt/homebrew/share/android-commandlinetools/emulator/lib64/vulkan/libvulkan.dylib
+INFO         | Selecting Vulkan device: SwiftShader Device (LLVM 10.0.0), Version: 1.2.0
+INFO         | Supports id properties, got a vulkan device UUID
+INFO         | SharedLibrary::open for [/System/Library/Frameworks/OpenGL.framework/OpenGL]: not found in map, open for the first time
+
+INFO         | SharedLibrary::open for [/System/Library/Frameworks/OpenGL.framework/OpenGL] (posix): begin
+
+INFO         | SharedLibrary::open for [/System/Library/Frameworks/OpenGL.framework/OpenGL] (posix,darwin): call dlopen
+
+INFO         | SharedLibrary::open for [libshadertranslator.dylib]: not found in map, open for the first time
+
+INFO         | SharedLibrary::open for [libshadertranslator.dylib] (posix): begin
+
+INFO         | SharedLibrary::open for [libshadertranslator.dylib] (posix,darwin): call dlopen
+
+INFO         | Initializing VkEmulation features:
+INFO         |     glInteropSupported: false
+INFO         |     useDeferredCommands: true
+INFO         |     createResourceWithRequirements: true
+INFO         |     useVulkanComposition: false
+INFO         |     useVulkanNativeSwapchain: false
+INFO         |     enable guestRenderDoc: false
+INFO         |     ASTC LDR emulation mode: 2
+INFO         |     enable ETC2 emulation: true
+INFO         |     enable Ycbcr emulation: false
+INFO         |     guestVulkanOnly: false
+INFO         |     useDedicatedAllocations: false
+INFO         | Graphics Adapter Vendor Google (Apple)
+INFO         | Graphics Adapter Android Emulator OpenGL ES Translator (Apple M2)
+INFO         | Graphics API Version OpenGL ES 3.0 (4.1 Metal - 89.4)
+INFO         | Graphics API Extensions GL_OES_EGL_sync GL_OES_EGL_image GL_OES_EGL_image_external GL_OES_depth24 GL_OES_depth32 GL_OES_element_index_uint GL_OES_texture_float GL_OES_texture_float_linear GL_OES_compressed_paletted_texture GL_OES_compressed_ETC1_RGB8_texture GL_OES_depth_texture GL_OES_texture_npot GL_OES_rgb8_rgba8 GL_EXT_color_buffer_float GL_EXT_color_buffer_half_float GL_EXT_texture_format_BGRA8888 GL_APPLE_texture_format_BGRA8888 
+INFO         | Graphics Device Extensions N/A
+INFO         | Sending adb public key [QAAAAHEatoNvmY1e5AVDipKm2qlQz6lIeZcBnjwiMli8uy4IlxjnTGOWxYDfBkOcC3EL/B1GNY1/mnr/0tQKaSUw4nn8vM0PHTHwYNHa53mKFpQ73xc2bOJUOoh1tC/h547efNqZ5UUk1sBxqQE/bTQNR2owGIZZcPBND9eRpMzVq9KDgoHRCBXP4fBqd9lRaysSrZp2NMokwrkpHf4WhmetzQK7Y1kOGmyxKENkNWMGJcrq6IWOMcqJLyowG5ylgRW1dl8Jmhl3w0sdrMCbCVulx4t16zMnXCORTiOvJacx19GJ1NKQUkZqootJgzfu36fh7SoLKEuJvb/9RpCiYSsHrVSfeC+6oZ9gmevGZq++kERRqTIVmygXzF3EAN98jyBfm2xtITkBjSZeiJoF0nKYheX1lahhpp70DkqwyqNuAOlx++OF3GhKHV/HIsy/uQNrdm630QWk6c90HLAuDVSBEIADBxYhQOYDqtZwjrOkPBfC9eWiEF2veaZFqc4vFYKB3KLDoKh0AHfUcvf1yKKYcPHuoNkV+eHtjulkiHPdRGC+U/K9AsrMlWP8xSl/j+W8gFlIBs9R+W5qcyVA18DAVxbuM3pxgcVs34UJHpqnUEnDVpGctZDwePywOXyPjbde6iXiaT8pv2pCZUg9Aw1sAX5aMapdm0q40/xR3IfLGecA0Je9hwEAAQA= rennyluzardo@unknown]
+INFO         | Userspace boot properties:
+INFO         |   androidboot.boot_devices=a003600.virtio_mmio
+INFO         |   androidboot.dalvik.vm.heapsize=512m
+INFO         |   androidboot.debug.hwui.renderer=skiagl
+INFO         |   androidboot.hardware=ranchu
+INFO         |   androidboot.hardware.gltransport=pipe
+INFO         |   androidboot.hardware.vulkan=ranchu
+INFO         |   androidboot.logcat=*:V
+INFO         |   androidboot.opengles.version=196608
+INFO         |   androidboot.qemu=1
+INFO         |   androidboot.qemu.adb.pubkey=QAAAAHEatoNvmY1e5AVDipKm2qlQz6lIeZcBnjwiMli8uy4IlxjnTGOWxYDfBkOcC3EL/B1GNY1/mnr/0tQKaSUw4nn8vM0PHTHwYNHa53mKFpQ73xc2bOJUOoh1tC/h547efNqZ5UUk1sBxqQE/bTQNR2owGIZZcPBND9eRpMzVq9KDgoHRCBXP4fBqd9lRaysSrZp2NMokwrkpHf4WhmetzQK7Y1kOGmyxKENkNWMGJcrq6IWOMcqJLyowG5ylgRW1dl8Jmhl3w0sdrMCbCVulx4t16zMnXCORTiOvJacx19GJ1NKQUkZqootJgzfu36fh7SoLKEuJvb/9RpCiYSsHrVSfeC+6oZ9gmevGZq++kERRqTIVmygXzF3EAN98jyBfm2xtITkBjSZeiJoF0nKYheX1lahhpp70DkqwyqNuAOlx++OF3GhKHV/HIsy/uQNrdm630QWk6c90HLAuDVSBEIADBxYhQOYDqtZwjrOkPBfC9eWiEF2veaZFqc4vFYKB3KLDoKh0AHfUcvf1yKKYcPHuoNkV+eHtjulkiHPdRGC+U/K9AsrMlWP8xSl/j+W8gFlIBs9R+W5qcyVA18DAVxbuM3pxgcVs34UJHpqnUEnDVpGctZDwePywOXyPjbde6iXiaT8pv2pCZUg9Aw1sAX5aMapdm0q40/xR3IfLGecA0Je9hwEAAQA= rennyluzardo@unknown
+INFO         |   androidboot.qemu.avd_name=Papaleco2
+INFO         |   androidboot.qemu.camera_hq_edge_processing=0
+INFO         |   androidboot.qemu.camera_protocol_ver=1
+INFO         |   androidboot.qemu.cpuvulkan.version=4202496
+INFO         |   androidboot.qemu.gltransport.drawFlushInterval=800
+INFO         |   androidboot.qemu.gltransport.name=pipe
+INFO         |   androidboot.qemu.hwcodec.avcdec=2
+INFO         |   androidboot.qemu.hwcodec.hevcdec=2
+INFO         |   androidboot.qemu.hwcodec.vpxdec=2
+INFO         |   androidboot.qemu.settings.system.screen_off_timeout=2147483647
+INFO         |   androidboot.qemu.virtiowifi=1
+INFO         |   androidboot.qemu.vsync=60
+INFO         |   androidboot.serialno=EMULATOR35X4X9X0
+INFO         |   androidboot.vbmeta.digest=499884d30783a384ac37278306ff7a9d573a5865d75af3e2347e0e5c41cd76cd
+INFO         |   androidboot.vbmeta.hash_alg=sha256
+INFO         |   androidboot.vbmeta.size=6720
+INFO         |   androidboot.veritymode=enforcing
+INFO         | Monitoring duration of emulator setup.
+WARNING      | The emulator now requires a signed jwt token for gRPC access! Use the -grpc flag if you really want an open unprotected grpc port
+INFO         | Using security allow list from: /opt/homebrew/share/android-commandlinetools/emulator/lib/emulator_access.json
+WARNING      | *** Basic token auth should only be used by android-studio ***
+INFO         | The active JSON Web Key Sets can be found here: /Users/rennyluzardo/Library/Caches/TemporaryItems/avd/running/5738/jwks/b1a8117d-6a20-4905-93d7-50193b99b1d2/active.jwk
+INFO         | Scanning /Users/rennyluzardo/Library/Caches/TemporaryItems/avd/running/5738/jwks/b1a8117d-6a20-4905-93d7-50193b99b1d2 for jwk keys.
+INFO         | Started GRPC server at 127.0.0.1:8554, security: Local, auth: +token
+INFO         | Advertising in: /Users/rennyluzardo/Library/Caches/TemporaryItems/avd/running/pid_5738.ini
+INFO         | Setting display: 0 configuration to: 320x640, dpi: 160x160 
+INFO         | setDisplayActiveConfig 0
+ERROR        | Unable to connect to adb daemon on port: 5037
+INFO         | Checking system compatibility:
+INFO         |   Checking: hasSufficientDiskSpace
+INFO         |      Ok: Disk space requirements to run avd: `Papaleco2` are met
+INFO         |   Checking: hasSufficientHwGpu
+INFO         |      Ok: Hardware GPU requirements to run avd: `Papaleco2` are passed
+INFO         |   Checking: hasSufficientSystem
+INFO         |      Ok: System requirements to run avd: `Papaleco2` are met
+ERROR        | Unable to connect to adb daemon on port: 5037
+INFO         | Activated packet streamer for bluetooth emulation
+INFO         | Activated packet streamer for uwb emulation
+INFO         | Loading snapshot 'default_boot'...
+WARNING      | Client not connected yet. Ignoring message!
+WARNING      | Client not connected yet. Ignoring message!
+WARNING      | Client not connected yet. Ignoring message!
+WARNING      | Unknown XR viewport mode requested: 0, ignored.
+
+INFO         | Successfully loaded snapshot 'default_boot'
+ERROR        | Failed to find ColorBuffer:0
+ERROR        | Failed to find ColorBuffer:0
+ERROR        | Failed to find ColorBuffer:0
+WARNING      | UpdateCheck: Failure: Error
+WARNING      | UpdateCheck: failed to get the latest version, skipping check (current version '35.4.9-13025442')
+INFO         | Wait for emulator (pid 5738) 20 seconds to shutdown gracefully before kill;you can set environment variable ANDROID_EMULATOR_WAIT_TIME_BEFORE_KILL(in seconds) to change the default value (20 seconds)
+
+INFO         | Android emulator version 35.4.9.0 (build_id 13025442) (CL:N/A)
+INFO         | Graphics backend: gfxstream
+INFO         | Found systemPath /opt/homebrew/share/android-commandlinetools/system-images/android-36/google_apis_playstore/arm64-v8a/
+WARNING      | Please update the emulator to one that supports the feature(s): VulkanVirtualQueue
+INFO         | Increasing RAM size to 2048MB
+INFO         | Checking system compatibility:
+INFO         |   Checking: hasSufficientDiskSpace
+INFO         |      Ok: Disk space requirements to run avd: `Papaleco2` are met
+INFO         |   Checking: hasSufficientHwGpu
+INFO         |      Ok: Hardware GPU requirements to run avd: `Papaleco2` are passed
+INFO         |   Checking: hasSufficientSystem
+INFO         |      Ok: System requirements to run avd: `Papaleco2` are met
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_btn_xr_environment_living_room_day_clicked() (:0, )
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_btn_xr_environment_living_room_night_clicked() (:0, )
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_new_posture_requested(int) (:0, )
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_dismiss_posture_selection_dialog() (:0, )
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_new_resizable_requested(PresetEmulatorSizeType) (:0, )
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_dismiss_resizable_dialog() (:0, )
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_xr_environment_mode_changed(int) (:0, )
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_dismiss_xr_environment_mode_dialog() (:0, )
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_xr_input_mode_changed(int) (:0, )
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_dismiss_xr_input_mode_dialog() (:0, )
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_sleep_timer_done() (:0, )
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_unfold_timer_done() (:0, )
+INFO         | Storing crashdata in: /tmp/android-rennyluzardo/emu-crash-35.4.9.db, detection is enabled for process: 41829
+INFO         | Guest Driver: Auto (ext controls)
+library_mode host gpu mode host
+INFO         | Initializing hardware OpenGLES emulation support
+I0615 00:05:11.417773 25fdf00 opengles.cpp:285] android_startOpenglesRenderer: gpu info
+I0615 00:05:11.417790 25fdf00 opengles.cpp:286] 
+INFO         | HealthMonitor disabled.
+INFO         | initIcdPaths: ICD set to 'swiftshader', using Swiftshader ICD
+INFO         | Setting ICD filenames for the loader = /opt/homebrew/share/android-commandlinetools/emulator/qemu/darwin-aarch64/lib64/vulkan/vk_swiftshader_icd.json:/opt/homebrew/share/android-commandlinetools/emulator/lib64/vulkan/vk_swiftshader_icd.json
+INFO         | SharedLibrary::open for [/opt/homebrew/share/android-commandlinetools/emulator/qemu/darwin-aarch64/lib64/vulkan/libvulkan.dylib]
+
+INFO         | SharedLibrary::open for [/opt/homebrew/share/android-commandlinetools/emulator/qemu/darwin-aarch64/lib64/vulkan/libvulkan.dylib]: not found in map, open for the first time
+
+INFO         | SharedLibrary::open for [/opt/homebrew/share/android-commandlinetools/emulator/qemu/darwin-aarch64/lib64/vulkan/libvulkan.dylib] (posix): begin
+
+INFO         | SharedLibrary::open for [/opt/homebrew/share/android-commandlinetools/emulator/qemu/darwin-aarch64/lib64/vulkan/libvulkan.dylib] (posix,darwin): call dlopen
+
+INFO         | SharedLibrary::open for [/opt/homebrew/share/android-commandlinetools/emulator/qemu/darwin-aarch64/lib64/vulkan/libvulkan.dylib] (posix,darwin): failed, try again with [/opt/homebrew/share/android-commandlinetools/emulator/qemu/darwin-aarch64/lib64/vulkan/libvulkan.dylib]
+
+INFO         | SharedLibrary::open for [/opt/homebrew/share/android-commandlinetools/emulator/qemu/darwin-aarch64/lib64/vulkan/libvulkan.dylib] failed (posix). dlerror: []
+
+INFO         | SharedLibrary::open for [/opt/homebrew/share/android-commandlinetools/emulator/lib64/vulkan/libvulkan.dylib]
+
+INFO         | SharedLibrary::open for [/opt/homebrew/share/android-commandlinetools/emulator/lib64/vulkan/libvulkan.dylib]: not found in map, open for the first time
+
+INFO         | SharedLibrary::open for [/opt/homebrew/share/android-commandlinetools/emulator/lib64/vulkan/libvulkan.dylib] (posix): begin
+
+INFO         | SharedLibrary::open for [/opt/homebrew/share/android-commandlinetools/emulator/lib64/vulkan/libvulkan.dylib] (posix,darwin): call dlopen
+
+INFO         | Added library: /opt/homebrew/share/android-commandlinetools/emulator/lib64/vulkan/libvulkan.dylib
+INFO         | Selecting Vulkan device: SwiftShader Device (LLVM 10.0.0), Version: 1.2.0
+INFO         | Supports id properties, got a vulkan device UUID
+INFO         | SharedLibrary::open for [/System/Library/Frameworks/OpenGL.framework/OpenGL]: not found in map, open for the first time
+
+INFO         | SharedLibrary::open for [/System/Library/Frameworks/OpenGL.framework/OpenGL] (posix): begin
+
+INFO         | SharedLibrary::open for [/System/Library/Frameworks/OpenGL.framework/OpenGL] (posix,darwin): call dlopen
+
+INFO         | SharedLibrary::open for [libshadertranslator.dylib]: not found in map, open for the first time
+
+INFO         | SharedLibrary::open for [libshadertranslator.dylib] (posix): begin
+
+INFO         | SharedLibrary::open for [libshadertranslator.dylib] (posix,darwin): call dlopen
+
+INFO         | Initializing VkEmulation features:
+INFO         |     glInteropSupported: false
+INFO         |     useDeferredCommands: true
+INFO         |     createResourceWithRequirements: true
+INFO         |     useVulkanComposition: false
+INFO         |     useVulkanNativeSwapchain: false
+INFO         |     enable guestRenderDoc: false
+INFO         |     ASTC LDR emulation mode: 2
+INFO         |     enable ETC2 emulation: true
+INFO         |     enable Ycbcr emulation: false
+INFO         |     guestVulkanOnly: false
+INFO         |     useDedicatedAllocations: false
+INFO         | Graphics Adapter Vendor Google (Apple)
+INFO         | Graphics Adapter Android Emulator OpenGL ES Translator (Apple M2)
+INFO         | Graphics API Version OpenGL ES 3.0 (4.1 Metal - 89.4)
+INFO         | Graphics API Extensions GL_OES_EGL_sync GL_OES_EGL_image GL_OES_EGL_image_external GL_OES_depth24 GL_OES_depth32 GL_OES_element_index_uint GL_OES_texture_float GL_OES_texture_float_linear GL_OES_compressed_paletted_texture GL_OES_compressed_ETC1_RGB8_texture GL_OES_depth_texture GL_OES_texture_npot GL_OES_rgb8_rgba8 GL_EXT_color_buffer_float GL_EXT_color_buffer_half_float GL_EXT_texture_format_BGRA8888 GL_APPLE_texture_format_BGRA8888 
+INFO         | Graphics Device Extensions N/A
+INFO         | Sending adb public key [QAAAAHEatoNvmY1e5AVDipKm2qlQz6lIeZcBnjwiMli8uy4IlxjnTGOWxYDfBkOcC3EL/B1GNY1/mnr/0tQKaSUw4nn8vM0PHTHwYNHa53mKFpQ73xc2bOJUOoh1tC/h547efNqZ5UUk1sBxqQE/bTQNR2owGIZZcPBND9eRpMzVq9KDgoHRCBXP4fBqd9lRaysSrZp2NMokwrkpHf4WhmetzQK7Y1kOGmyxKENkNWMGJcrq6IWOMcqJLyowG5ylgRW1dl8Jmhl3w0sdrMCbCVulx4t16zMnXCORTiOvJacx19GJ1NKQUkZqootJgzfu36fh7SoLKEuJvb/9RpCiYSsHrVSfeC+6oZ9gmevGZq++kERRqTIVmygXzF3EAN98jyBfm2xtITkBjSZeiJoF0nKYheX1lahhpp70DkqwyqNuAOlx++OF3GhKHV/HIsy/uQNrdm630QWk6c90HLAuDVSBEIADBxYhQOYDqtZwjrOkPBfC9eWiEF2veaZFqc4vFYKB3KLDoKh0AHfUcvf1yKKYcPHuoNkV+eHtjulkiHPdRGC+U/K9AsrMlWP8xSl/j+W8gFlIBs9R+W5qcyVA18DAVxbuM3pxgcVs34UJHpqnUEnDVpGctZDwePywOXyPjbde6iXiaT8pv2pCZUg9Aw1sAX5aMapdm0q40/xR3IfLGecA0Je9hwEAAQA= rennyluzardo@unknown]
+INFO         | Userspace boot properties:
+INFO         |   androidboot.boot_devices=a003600.virtio_mmio
+INFO         |   androidboot.dalvik.vm.heapsize=512m
+INFO         |   androidboot.debug.hwui.renderer=skiagl
+INFO         |   androidboot.hardware=ranchu
+INFO         |   androidboot.hardware.gltransport=pipe
+INFO         |   androidboot.hardware.vulkan=ranchu
+INFO         |   androidboot.logcat=*:V
+INFO         |   androidboot.opengles.version=196608
+INFO         |   androidboot.qemu=1
+INFO         |   androidboot.qemu.adb.pubkey=QAAAAHEatoNvmY1e5AVDipKm2qlQz6lIeZcBnjwiMli8uy4IlxjnTGOWxYDfBkOcC3EL/B1GNY1/mnr/0tQKaSUw4nn8vM0PHTHwYNHa53mKFpQ73xc2bOJUOoh1tC/h547efNqZ5UUk1sBxqQE/bTQNR2owGIZZcPBND9eRpMzVq9KDgoHRCBXP4fBqd9lRaysSrZp2NMokwrkpHf4WhmetzQK7Y1kOGmyxKENkNWMGJcrq6IWOMcqJLyowG5ylgRW1dl8Jmhl3w0sdrMCbCVulx4t16zMnXCORTiOvJacx19GJ1NKQUkZqootJgzfu36fh7SoLKEuJvb/9RpCiYSsHrVSfeC+6oZ9gmevGZq++kERRqTIVmygXzF3EAN98jyBfm2xtITkBjSZeiJoF0nKYheX1lahhpp70DkqwyqNuAOlx++OF3GhKHV/HIsy/uQNrdm630QWk6c90HLAuDVSBEIADBxYhQOYDqtZwjrOkPBfC9eWiEF2veaZFqc4vFYKB3KLDoKh0AHfUcvf1yKKYcPHuoNkV+eHtjulkiHPdRGC+U/K9AsrMlWP8xSl/j+W8gFlIBs9R+W5qcyVA18DAVxbuM3pxgcVs34UJHpqnUEnDVpGctZDwePywOXyPjbde6iXiaT8pv2pCZUg9Aw1sAX5aMapdm0q40/xR3IfLGecA0Je9hwEAAQA= rennyluzardo@unknown
+INFO         |   androidboot.qemu.avd_name=Papaleco2
+INFO         |   androidboot.qemu.camera_hq_edge_processing=0
+INFO         |   androidboot.qemu.camera_protocol_ver=1
+INFO         |   androidboot.qemu.cpuvulkan.version=4202496
+INFO         |   androidboot.qemu.gltransport.drawFlushInterval=800
+INFO         |   androidboot.qemu.gltransport.name=pipe
+INFO         |   androidboot.qemu.hwcodec.avcdec=2
+INFO         |   androidboot.qemu.hwcodec.hevcdec=2
+INFO         |   androidboot.qemu.hwcodec.vpxdec=2
+INFO         |   androidboot.qemu.settings.system.screen_off_timeout=2147483647
+INFO         |   androidboot.qemu.virtiowifi=1
+INFO         |   androidboot.qemu.vsync=60
+INFO         |   androidboot.serialno=EMULATOR35X4X9X0
+INFO         |   androidboot.vbmeta.digest=499884d30783a384ac37278306ff7a9d573a5865d75af3e2347e0e5c41cd76cd
+INFO         |   androidboot.vbmeta.hash_alg=sha256
+INFO         |   androidboot.vbmeta.size=6720
+INFO         |   androidboot.veritymode=enforcing
+INFO         | Monitoring duration of emulator setup.
+WARNING      | The emulator now requires a signed jwt token for gRPC access! Use the -grpc flag if you really want an open unprotected grpc port
+INFO         | Using security allow list from: /opt/homebrew/share/android-commandlinetools/emulator/lib/emulator_access.json
+WARNING      | *** Basic token auth should only be used by android-studio ***
+INFO         | The active JSON Web Key Sets can be found here: /Users/rennyluzardo/Library/Caches/TemporaryItems/avd/running/41829/jwks/565d68c9-0eac-4fcc-85c5-b48786a99936/active.jwk
+INFO         | Scanning /Users/rennyluzardo/Library/Caches/TemporaryItems/avd/running/41829/jwks/565d68c9-0eac-4fcc-85c5-b48786a99936 for jwk keys.
+INFO         | Started GRPC server at 127.0.0.1:8554, security: Local, auth: +token
+INFO         | Advertising in: /Users/rennyluzardo/Library/Caches/TemporaryItems/avd/running/pid_41829.ini
+INFO         | Setting display: 0 configuration to: 320x640, dpi: 160x160 
+INFO         | setDisplayActiveConfig 0
+INFO         | Checking system compatibility:
+INFO         |   Checking: hasSufficientDiskSpace
+INFO         |      Ok: Disk space requirements to run avd: `Papaleco2` are met
+INFO         |   Checking: hasSufficientHwGpu
+INFO         |      Ok: Hardware GPU requirements to run avd: `Papaleco2` are passed
+INFO         |   Checking: hasSufficientSystem
+INFO         |      Ok: System requirements to run avd: `Papaleco2` are met
+INFO         | Loading snapshot 'default_boot'...
+WARNING      | Device 'encrypt' does not have the requested snapshot 'default_boot'
+
+WARNING      | Failed to load snapshot 'default_boot'
+INFO         | Activated packet streamer for uwb emulation
+INFO         | Activated packet streamer for bluetooth emulation
+INFO         | Boot completed in 14474 ms
+INFO         | Increasing screen off timeout, logcat buffer size to 2M.
+INFO         | Created VkInstance:0x1476d0400 for application: engine:.
+INFO         | Wait for emulator (pid 41829) 20 seconds to shutdown gracefully before kill;you can set environment variable ANDROID_EMULATOR_WAIT_TIME_BEFORE_KILL(in seconds) to change the default value (20 seconds)
+
+WARNING      | Not saving state: current state does not support snapshotting
+INFO         | Deleting snapshot default_boot
+ERROR        | Failed to restore previous context: 12297
+INFO         | Android emulator version 35.4.9.0 (build_id 13025442) (CL:N/A)
+INFO         | Graphics backend: gfxstream
+INFO         | Found systemPath /opt/homebrew/share/android-commandlinetools/system-images/android-36/google_apis_playstore/arm64-v8a/
+WARNING      | Please update the emulator to one that supports the feature(s): VulkanVirtualQueue
+INFO         | Increasing RAM size to 2048MB
+INFO         | Checking system compatibility:
+INFO         |   Checking: hasSufficientDiskSpace
+INFO         |      Ok: Disk space requirements to run avd: `Papaleco2` are met
+INFO         |   Checking: hasSufficientHwGpu
+INFO         |      Ok: Hardware GPU requirements to run avd: `Papaleco2` are passed
+INFO         |   Checking: hasSufficientSystem
+INFO         |      Ok: System requirements to run avd: `Papaleco2` are met
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_btn_xr_environment_living_room_day_clicked() (:0, )
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_btn_xr_environment_living_room_night_clicked() (:0, )
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_new_posture_requested(int) (:0, )
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_dismiss_posture_selection_dialog() (:0, )
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_new_resizable_requested(PresetEmulatorSizeType) (:0, )
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_dismiss_resizable_dialog() (:0, )
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_xr_environment_mode_changed(int) (:0, )
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_dismiss_xr_environment_mode_dialog() (:0, )
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_xr_input_mode_changed(int) (:0, )
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_dismiss_xr_input_mode_dialog() (:0, )
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_sleep_timer_done() (:0, )
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_unfold_timer_done() (:0, )
+INFO         | Storing crashdata in: /tmp/android-rennyluzardo/emu-crash-35.4.9.db, detection is enabled for process: 52042
+INFO         | Guest Driver: Auto (ext controls)
+library_mode host gpu mode host
+INFO         | Initializing hardware OpenGLES emulation support
+I0615 17:02:58.089172 25fdf00 opengles.cpp:285] android_startOpenglesRenderer: gpu info
+I0615 17:02:58.089200 25fdf00 opengles.cpp:286] 
+INFO         | HealthMonitor disabled.
+INFO         | initIcdPaths: ICD set to 'swiftshader', using Swiftshader ICD
+INFO         | Setting ICD filenames for the loader = /opt/homebrew/share/android-commandlinetools/emulator/qemu/darwin-aarch64/lib64/vulkan/vk_swiftshader_icd.json:/opt/homebrew/share/android-commandlinetools/emulator/lib64/vulkan/vk_swiftshader_icd.json
+INFO         | SharedLibrary::open for [/opt/homebrew/share/android-commandlinetools/emulator/qemu/darwin-aarch64/lib64/vulkan/libvulkan.dylib]
+
+INFO         | SharedLibrary::open for [/opt/homebrew/share/android-commandlinetools/emulator/qemu/darwin-aarch64/lib64/vulkan/libvulkan.dylib]: not found in map, open for the first time
+
+INFO         | SharedLibrary::open for [/opt/homebrew/share/android-commandlinetools/emulator/qemu/darwin-aarch64/lib64/vulkan/libvulkan.dylib] (posix): begin
+
+INFO         | SharedLibrary::open for [/opt/homebrew/share/android-commandlinetools/emulator/qemu/darwin-aarch64/lib64/vulkan/libvulkan.dylib] (posix,darwin): call dlopen
+
+INFO         | SharedLibrary::open for [/opt/homebrew/share/android-commandlinetools/emulator/qemu/darwin-aarch64/lib64/vulkan/libvulkan.dylib] (posix,darwin): failed, try again with [/opt/homebrew/share/android-commandlinetools/emulator/qemu/darwin-aarch64/lib64/vulkan/libvulkan.dylib]
+
+INFO         | SharedLibrary::open for [/opt/homebrew/share/android-commandlinetools/emulator/qemu/darwin-aarch64/lib64/vulkan/libvulkan.dylib] failed (posix). dlerror: []
+
+INFO         | SharedLibrary::open for [/opt/homebrew/share/android-commandlinetools/emulator/lib64/vulkan/libvulkan.dylib]
+
+INFO         | SharedLibrary::open for [/opt/homebrew/share/android-commandlinetools/emulator/lib64/vulkan/libvulkan.dylib]: not found in map, open for the first time
+
+INFO         | SharedLibrary::open for [/opt/homebrew/share/android-commandlinetools/emulator/lib64/vulkan/libvulkan.dylib] (posix): begin
+
+INFO         | SharedLibrary::open for [/opt/homebrew/share/android-commandlinetools/emulator/lib64/vulkan/libvulkan.dylib] (posix,darwin): call dlopen
+
+INFO         | Added library: /opt/homebrew/share/android-commandlinetools/emulator/lib64/vulkan/libvulkan.dylib
+INFO         | Selecting Vulkan device: SwiftShader Device (LLVM 10.0.0), Version: 1.2.0
+INFO         | Supports id properties, got a vulkan device UUID
+INFO         | SharedLibrary::open for [/System/Library/Frameworks/OpenGL.framework/OpenGL]: not found in map, open for the first time
+
+INFO         | SharedLibrary::open for [/System/Library/Frameworks/OpenGL.framework/OpenGL] (posix): begin
+
+INFO         | SharedLibrary::open for [/System/Library/Frameworks/OpenGL.framework/OpenGL] (posix,darwin): call dlopen
+
+INFO         | SharedLibrary::open for [libshadertranslator.dylib]: not found in map, open for the first time
+
+INFO         | SharedLibrary::open for [libshadertranslator.dylib] (posix): begin
+
+INFO         | SharedLibrary::open for [libshadertranslator.dylib] (posix,darwin): call dlopen
+
+INFO         | Initializing VkEmulation features:
+INFO         |     glInteropSupported: false
+INFO         |     useDeferredCommands: true
+INFO         |     createResourceWithRequirements: true
+INFO         |     useVulkanComposition: false
+INFO         |     useVulkanNativeSwapchain: false
+INFO         |     enable guestRenderDoc: false
+INFO         |     ASTC LDR emulation mode: 2
+INFO         |     enable ETC2 emulation: true
+INFO         |     enable Ycbcr emulation: false
+INFO         |     guestVulkanOnly: false
+INFO         |     useDedicatedAllocations: false
+INFO         | Graphics Adapter Vendor Google (Apple)
+INFO         | Graphics Adapter Android Emulator OpenGL ES Translator (Apple M2)
+INFO         | Graphics API Version OpenGL ES 3.0 (4.1 Metal - 89.4)
+INFO         | Graphics API Extensions GL_OES_EGL_sync GL_OES_EGL_image GL_OES_EGL_image_external GL_OES_depth24 GL_OES_depth32 GL_OES_element_index_uint GL_OES_texture_float GL_OES_texture_float_linear GL_OES_compressed_paletted_texture GL_OES_compressed_ETC1_RGB8_texture GL_OES_depth_texture GL_OES_texture_npot GL_OES_rgb8_rgba8 GL_EXT_color_buffer_float GL_EXT_color_buffer_half_float GL_EXT_texture_format_BGRA8888 GL_APPLE_texture_format_BGRA8888 
+INFO         | Graphics Device Extensions N/A
+INFO         | Sending adb public key [QAAAAHEatoNvmY1e5AVDipKm2qlQz6lIeZcBnjwiMli8uy4IlxjnTGOWxYDfBkOcC3EL/B1GNY1/mnr/0tQKaSUw4nn8vM0PHTHwYNHa53mKFpQ73xc2bOJUOoh1tC/h547efNqZ5UUk1sBxqQE/bTQNR2owGIZZcPBND9eRpMzVq9KDgoHRCBXP4fBqd9lRaysSrZp2NMokwrkpHf4WhmetzQK7Y1kOGmyxKENkNWMGJcrq6IWOMcqJLyowG5ylgRW1dl8Jmhl3w0sdrMCbCVulx4t16zMnXCORTiOvJacx19GJ1NKQUkZqootJgzfu36fh7SoLKEuJvb/9RpCiYSsHrVSfeC+6oZ9gmevGZq++kERRqTIVmygXzF3EAN98jyBfm2xtITkBjSZeiJoF0nKYheX1lahhpp70DkqwyqNuAOlx++OF3GhKHV/HIsy/uQNrdm630QWk6c90HLAuDVSBEIADBxYhQOYDqtZwjrOkPBfC9eWiEF2veaZFqc4vFYKB3KLDoKh0AHfUcvf1yKKYcPHuoNkV+eHtjulkiHPdRGC+U/K9AsrMlWP8xSl/j+W8gFlIBs9R+W5qcyVA18DAVxbuM3pxgcVs34UJHpqnUEnDVpGctZDwePywOXyPjbde6iXiaT8pv2pCZUg9Aw1sAX5aMapdm0q40/xR3IfLGecA0Je9hwEAAQA= rennyluzardo@unknown]
+INFO         | Userspace boot properties:
+INFO         |   androidboot.boot_devices=a003600.virtio_mmio
+INFO         |   androidboot.dalvik.vm.heapsize=512m
+INFO         |   androidboot.debug.hwui.renderer=skiagl
+INFO         |   androidboot.hardware=ranchu
+INFO         |   androidboot.hardware.gltransport=pipe
+INFO         |   androidboot.hardware.vulkan=ranchu
+INFO         |   androidboot.logcat=*:V
+INFO         |   androidboot.opengles.version=196608
+INFO         |   androidboot.qemu=1
+INFO         |   androidboot.qemu.adb.pubkey=QAAAAHEatoNvmY1e5AVDipKm2qlQz6lIeZcBnjwiMli8uy4IlxjnTGOWxYDfBkOcC3EL/B1GNY1/mnr/0tQKaSUw4nn8vM0PHTHwYNHa53mKFpQ73xc2bOJUOoh1tC/h547efNqZ5UUk1sBxqQE/bTQNR2owGIZZcPBND9eRpMzVq9KDgoHRCBXP4fBqd9lRaysSrZp2NMokwrkpHf4WhmetzQK7Y1kOGmyxKENkNWMGJcrq6IWOMcqJLyowG5ylgRW1dl8Jmhl3w0sdrMCbCVulx4t16zMnXCORTiOvJacx19GJ1NKQUkZqootJgzfu36fh7SoLKEuJvb/9RpCiYSsHrVSfeC+6oZ9gmevGZq++kERRqTIVmygXzF3EAN98jyBfm2xtITkBjSZeiJoF0nKYheX1lahhpp70DkqwyqNuAOlx++OF3GhKHV/HIsy/uQNrdm630QWk6c90HLAuDVSBEIADBxYhQOYDqtZwjrOkPBfC9eWiEF2veaZFqc4vFYKB3KLDoKh0AHfUcvf1yKKYcPHuoNkV+eHtjulkiHPdRGC+U/K9AsrMlWP8xSl/j+W8gFlIBs9R+W5qcyVA18DAVxbuM3pxgcVs34UJHpqnUEnDVpGctZDwePywOXyPjbde6iXiaT8pv2pCZUg9Aw1sAX5aMapdm0q40/xR3IfLGecA0Je9hwEAAQA= rennyluzardo@unknown
+INFO         |   androidboot.qemu.avd_name=Papaleco2
+INFO         |   androidboot.qemu.camera_hq_edge_processing=0
+INFO         |   androidboot.qemu.camera_protocol_ver=1
+INFO         |   androidboot.qemu.cpuvulkan.version=4202496
+INFO         |   androidboot.qemu.gltransport.drawFlushInterval=800
+INFO         |   androidboot.qemu.gltransport.name=pipe
+INFO         |   androidboot.qemu.hwcodec.avcdec=2
+INFO         |   androidboot.qemu.hwcodec.hevcdec=2
+INFO         |   androidboot.qemu.hwcodec.vpxdec=2
+INFO         |   androidboot.qemu.settings.system.screen_off_timeout=2147483647
+INFO         |   androidboot.qemu.virtiowifi=1
+INFO         |   androidboot.qemu.vsync=60
+INFO         |   androidboot.serialno=EMULATOR35X4X9X0
+INFO         |   androidboot.vbmeta.digest=499884d30783a384ac37278306ff7a9d573a5865d75af3e2347e0e5c41cd76cd
+INFO         |   androidboot.vbmeta.hash_alg=sha256
+INFO         |   androidboot.vbmeta.size=6720
+INFO         |   androidboot.veritymode=enforcing
+INFO         | Monitoring duration of emulator setup.
+WARNING      | The emulator now requires a signed jwt token for gRPC access! Use the -grpc flag if you really want an open unprotected grpc port
+INFO         | Using security allow list from: /opt/homebrew/share/android-commandlinetools/emulator/lib/emulator_access.json
+WARNING      | *** Basic token auth should only be used by android-studio ***
+INFO         | The active JSON Web Key Sets can be found here: /Users/rennyluzardo/Library/Caches/TemporaryItems/avd/running/52042/jwks/8243a069-0cb7-4ef6-9f61-f9122d44afce/active.jwk
+INFO         | Scanning /Users/rennyluzardo/Library/Caches/TemporaryItems/avd/running/52042/jwks/8243a069-0cb7-4ef6-9f61-f9122d44afce for jwk keys.
+INFO         | Started GRPC server at 127.0.0.1:8554, security: Local, auth: +token
+INFO         | Advertising in: /Users/rennyluzardo/Library/Caches/TemporaryItems/avd/running/pid_52042.ini
+INFO         | Setting display: 0 configuration to: 320x640, dpi: 160x160 
+INFO         | setDisplayActiveConfig 0
+INFO         | Checking system compatibility:
+INFO         |   Checking: hasSufficientDiskSpace
+INFO         |      Ok: Disk space requirements to run avd: `Papaleco2` are met
+INFO         |   Checking: hasSufficientHwGpu
+INFO         |      Ok: Hardware GPU requirements to run avd: `Papaleco2` are passed
+INFO         |   Checking: hasSufficientSystem
+INFO         |      Ok: System requirements to run avd: `Papaleco2` are met
+INFO         | Loading snapshot 'default_boot'...
+WARNING      | Device 'encrypt' does not have the requested snapshot 'default_boot'
+
+WARNING      | Failed to load snapshot 'default_boot'
+INFO         | Activated packet streamer for uwb emulation
+INFO         | Activated packet streamer for bluetooth emulation
+ERROR        | Failed to find ColorBuffer:41
+INFO         | Boot completed in 18648 ms
+INFO         | Increasing screen off timeout, logcat buffer size to 2M.
+INFO         | Created VkInstance:0x10f70a400 for application: engine:.
+INFO         | Wait for emulator (pid 52042) 20 seconds to shutdown gracefully before kill;you can set environment variable ANDROID_EMULATOR_WAIT_TIME_BEFORE_KILL(in seconds) to change the default value (20 seconds)
+
+WARNING      | Not saving state: current state does not support snapshotting
+INFO         | Deleting snapshot default_boot
+ERROR        | Failed to restore previous context: 12297
+INFO         | Android emulator version 35.4.9.0 (build_id 13025442) (CL:N/A)
+INFO         | Graphics backend: gfxstream
+INFO         | Found systemPath /opt/homebrew/share/android-commandlinetools/system-images/android-36/google_apis_playstore/arm64-v8a/
+WARNING      | Please update the emulator to one that supports the feature(s): VulkanVirtualQueue
+INFO         | Increasing RAM size to 2048MB
+INFO         | Checking system compatibility:
+INFO         |   Checking: hasSufficientDiskSpace
+INFO         |      Ok: Disk space requirements to run avd: `Papaleco2` are met
+INFO         |   Checking: hasSufficientHwGpu
+INFO         |      Ok: Hardware GPU requirements to run avd: `Papaleco2` are passed
+INFO         |   Checking: hasSufficientSystem
+INFO         |      Ok: System requirements to run avd: `Papaleco2` are met
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_btn_xr_environment_living_room_day_clicked() (:0, )
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_btn_xr_environment_living_room_night_clicked() (:0, )
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_new_posture_requested(int) (:0, )
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_dismiss_posture_selection_dialog() (:0, )
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_new_resizable_requested(PresetEmulatorSizeType) (:0, )
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_dismiss_resizable_dialog() (:0, )
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_xr_environment_mode_changed(int) (:0, )
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_dismiss_xr_environment_mode_dialog() (:0, )
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_xr_input_mode_changed(int) (:0, )
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_dismiss_xr_input_mode_dialog() (:0, )
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_sleep_timer_done() (:0, )
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_unfold_timer_done() (:0, )
+INFO         | Storing crashdata in: /tmp/android-rennyluzardo/emu-crash-35.4.9.db, detection is enabled for process: 52233
+INFO         | Guest Driver: Auto (ext controls)
+library_mode host gpu mode host
+INFO         | Initializing hardware OpenGLES emulation support
+I0615 17:11:18.853471 25fdf00 opengles.cpp:285] android_startOpenglesRenderer: gpu info
+I0615 17:11:18.853511 25fdf00 opengles.cpp:286] 
+INFO         | HealthMonitor disabled.
+INFO         | initIcdPaths: ICD set to 'swiftshader', using Swiftshader ICD
+INFO         | Setting ICD filenames for the loader = /opt/homebrew/share/android-commandlinetools/emulator/qemu/darwin-aarch64/lib64/vulkan/vk_swiftshader_icd.json:/opt/homebrew/share/android-commandlinetools/emulator/lib64/vulkan/vk_swiftshader_icd.json
+INFO         | SharedLibrary::open for [/opt/homebrew/share/android-commandlinetools/emulator/qemu/darwin-aarch64/lib64/vulkan/libvulkan.dylib]
+
+INFO         | SharedLibrary::open for [/opt/homebrew/share/android-commandlinetools/emulator/qemu/darwin-aarch64/lib64/vulkan/libvulkan.dylib]: not found in map, open for the first time
+
+INFO         | SharedLibrary::open for [/opt/homebrew/share/android-commandlinetools/emulator/qemu/darwin-aarch64/lib64/vulkan/libvulkan.dylib] (posix): begin
+
+INFO         | SharedLibrary::open for [/opt/homebrew/share/android-commandlinetools/emulator/qemu/darwin-aarch64/lib64/vulkan/libvulkan.dylib] (posix,darwin): call dlopen
+
+INFO         | SharedLibrary::open for [/opt/homebrew/share/android-commandlinetools/emulator/qemu/darwin-aarch64/lib64/vulkan/libvulkan.dylib] (posix,darwin): failed, try again with [/opt/homebrew/share/android-commandlinetools/emulator/qemu/darwin-aarch64/lib64/vulkan/libvulkan.dylib]
+
+INFO         | SharedLibrary::open for [/opt/homebrew/share/android-commandlinetools/emulator/qemu/darwin-aarch64/lib64/vulkan/libvulkan.dylib] failed (posix). dlerror: []
+
+INFO         | SharedLibrary::open for [/opt/homebrew/share/android-commandlinetools/emulator/lib64/vulkan/libvulkan.dylib]
+
+INFO         | SharedLibrary::open for [/opt/homebrew/share/android-commandlinetools/emulator/lib64/vulkan/libvulkan.dylib]: not found in map, open for the first time
+
+INFO         | SharedLibrary::open for [/opt/homebrew/share/android-commandlinetools/emulator/lib64/vulkan/libvulkan.dylib] (posix): begin
+
+INFO         | SharedLibrary::open for [/opt/homebrew/share/android-commandlinetools/emulator/lib64/vulkan/libvulkan.dylib] (posix,darwin): call dlopen
+
+INFO         | Added library: /opt/homebrew/share/android-commandlinetools/emulator/lib64/vulkan/libvulkan.dylib
+INFO         | Selecting Vulkan device: SwiftShader Device (LLVM 10.0.0), Version: 1.2.0
+INFO         | Supports id properties, got a vulkan device UUID
+INFO         | SharedLibrary::open for [/System/Library/Frameworks/OpenGL.framework/OpenGL]: not found in map, open for the first time
+
+INFO         | SharedLibrary::open for [/System/Library/Frameworks/OpenGL.framework/OpenGL] (posix): begin
+
+INFO         | SharedLibrary::open for [/System/Library/Frameworks/OpenGL.framework/OpenGL] (posix,darwin): call dlopen
+
+INFO         | SharedLibrary::open for [libshadertranslator.dylib]: not found in map, open for the first time
+
+INFO         | SharedLibrary::open for [libshadertranslator.dylib] (posix): begin
+
+INFO         | SharedLibrary::open for [libshadertranslator.dylib] (posix,darwin): call dlopen
+
+INFO         | Initializing VkEmulation features:
+INFO         |     glInteropSupported: false
+INFO         |     useDeferredCommands: true
+INFO         |     createResourceWithRequirements: true
+INFO         |     useVulkanComposition: false
+INFO         |     useVulkanNativeSwapchain: false
+INFO         |     enable guestRenderDoc: false
+INFO         |     ASTC LDR emulation mode: 2
+INFO         |     enable ETC2 emulation: true
+INFO         |     enable Ycbcr emulation: false
+INFO         |     guestVulkanOnly: false
+INFO         |     useDedicatedAllocations: false
+INFO         | Graphics Adapter Vendor Google (Apple)
+INFO         | Graphics Adapter Android Emulator OpenGL ES Translator (Apple M2)
+INFO         | Graphics API Version OpenGL ES 3.0 (4.1 Metal - 89.4)
+INFO         | Graphics API Extensions GL_OES_EGL_sync GL_OES_EGL_image GL_OES_EGL_image_external GL_OES_depth24 GL_OES_depth32 GL_OES_element_index_uint GL_OES_texture_float GL_OES_texture_float_linear GL_OES_compressed_paletted_texture GL_OES_compressed_ETC1_RGB8_texture GL_OES_depth_texture GL_OES_texture_npot GL_OES_rgb8_rgba8 GL_EXT_color_buffer_float GL_EXT_color_buffer_half_float GL_EXT_texture_format_BGRA8888 GL_APPLE_texture_format_BGRA8888 
+INFO         | Graphics Device Extensions N/A
+INFO         | Sending adb public key [QAAAAHEatoNvmY1e5AVDipKm2qlQz6lIeZcBnjwiMli8uy4IlxjnTGOWxYDfBkOcC3EL/B1GNY1/mnr/0tQKaSUw4nn8vM0PHTHwYNHa53mKFpQ73xc2bOJUOoh1tC/h547efNqZ5UUk1sBxqQE/bTQNR2owGIZZcPBND9eRpMzVq9KDgoHRCBXP4fBqd9lRaysSrZp2NMokwrkpHf4WhmetzQK7Y1kOGmyxKENkNWMGJcrq6IWOMcqJLyowG5ylgRW1dl8Jmhl3w0sdrMCbCVulx4t16zMnXCORTiOvJacx19GJ1NKQUkZqootJgzfu36fh7SoLKEuJvb/9RpCiYSsHrVSfeC+6oZ9gmevGZq++kERRqTIVmygXzF3EAN98jyBfm2xtITkBjSZeiJoF0nKYheX1lahhpp70DkqwyqNuAOlx++OF3GhKHV/HIsy/uQNrdm630QWk6c90HLAuDVSBEIADBxYhQOYDqtZwjrOkPBfC9eWiEF2veaZFqc4vFYKB3KLDoKh0AHfUcvf1yKKYcPHuoNkV+eHtjulkiHPdRGC+U/K9AsrMlWP8xSl/j+W8gFlIBs9R+W5qcyVA18DAVxbuM3pxgcVs34UJHpqnUEnDVpGctZDwePywOXyPjbde6iXiaT8pv2pCZUg9Aw1sAX5aMapdm0q40/xR3IfLGecA0Je9hwEAAQA= rennyluzardo@unknown]
+INFO         | Userspace boot properties:
+INFO         |   androidboot.boot_devices=a003600.virtio_mmio
+INFO         |   androidboot.dalvik.vm.heapsize=512m
+INFO         |   androidboot.debug.hwui.renderer=skiagl
+INFO         |   androidboot.hardware=ranchu
+INFO         |   androidboot.hardware.gltransport=pipe
+INFO         |   androidboot.hardware.vulkan=ranchu
+INFO         |   androidboot.logcat=*:V
+INFO         |   androidboot.opengles.version=196608
+INFO         |   androidboot.qemu=1
+INFO         |   androidboot.qemu.adb.pubkey=QAAAAHEatoNvmY1e5AVDipKm2qlQz6lIeZcBnjwiMli8uy4IlxjnTGOWxYDfBkOcC3EL/B1GNY1/mnr/0tQKaSUw4nn8vM0PHTHwYNHa53mKFpQ73xc2bOJUOoh1tC/h547efNqZ5UUk1sBxqQE/bTQNR2owGIZZcPBND9eRpMzVq9KDgoHRCBXP4fBqd9lRaysSrZp2NMokwrkpHf4WhmetzQK7Y1kOGmyxKENkNWMGJcrq6IWOMcqJLyowG5ylgRW1dl8Jmhl3w0sdrMCbCVulx4t16zMnXCORTiOvJacx19GJ1NKQUkZqootJgzfu36fh7SoLKEuJvb/9RpCiYSsHrVSfeC+6oZ9gmevGZq++kERRqTIVmygXzF3EAN98jyBfm2xtITkBjSZeiJoF0nKYheX1lahhpp70DkqwyqNuAOlx++OF3GhKHV/HIsy/uQNrdm630QWk6c90HLAuDVSBEIADBxYhQOYDqtZwjrOkPBfC9eWiEF2veaZFqc4vFYKB3KLDoKh0AHfUcvf1yKKYcPHuoNkV+eHtjulkiHPdRGC+U/K9AsrMlWP8xSl/j+W8gFlIBs9R+W5qcyVA18DAVxbuM3pxgcVs34UJHpqnUEnDVpGctZDwePywOXyPjbde6iXiaT8pv2pCZUg9Aw1sAX5aMapdm0q40/xR3IfLGecA0Je9hwEAAQA= rennyluzardo@unknown
+INFO         |   androidboot.qemu.avd_name=Papaleco2
+INFO         |   androidboot.qemu.camera_hq_edge_processing=0
+INFO         |   androidboot.qemu.camera_protocol_ver=1
+INFO         |   androidboot.qemu.cpuvulkan.version=4202496
+INFO         |   androidboot.qemu.gltransport.drawFlushInterval=800
+INFO         |   androidboot.qemu.gltransport.name=pipe
+INFO         |   androidboot.qemu.hwcodec.avcdec=2
+INFO         |   androidboot.qemu.hwcodec.hevcdec=2
+INFO         |   androidboot.qemu.hwcodec.vpxdec=2
+INFO         |   androidboot.qemu.settings.system.screen_off_timeout=2147483647
+INFO         |   androidboot.qemu.virtiowifi=1
+INFO         |   androidboot.qemu.vsync=60
+INFO         |   androidboot.serialno=EMULATOR35X4X9X0
+INFO         |   androidboot.vbmeta.digest=499884d30783a384ac37278306ff7a9d573a5865d75af3e2347e0e5c41cd76cd
+INFO         |   androidboot.vbmeta.hash_alg=sha256
+INFO         |   androidboot.vbmeta.size=6720
+INFO         |   androidboot.veritymode=enforcing
+INFO         | Monitoring duration of emulator setup.
+WARNING      | The emulator now requires a signed jwt token for gRPC access! Use the -grpc flag if you really want an open unprotected grpc port
+INFO         | Using security allow list from: /opt/homebrew/share/android-commandlinetools/emulator/lib/emulator_access.json
+WARNING      | *** Basic token auth should only be used by android-studio ***
+INFO         | The active JSON Web Key Sets can be found here: /Users/rennyluzardo/Library/Caches/TemporaryItems/avd/running/52233/jwks/39a4f939-3778-47e0-bd7c-336a53e3ff7f/active.jwk
+INFO         | Scanning /Users/rennyluzardo/Library/Caches/TemporaryItems/avd/running/52233/jwks/39a4f939-3778-47e0-bd7c-336a53e3ff7f for jwk keys.
+INFO         | Started GRPC server at 127.0.0.1:8554, security: Local, auth: +token
+INFO         | Advertising in: /Users/rennyluzardo/Library/Caches/TemporaryItems/avd/running/pid_52233.ini
+INFO         | Setting display: 0 configuration to: 320x640, dpi: 160x160 
+INFO         | setDisplayActiveConfig 0
+INFO         | Checking system compatibility:
+INFO         |   Checking: hasSufficientDiskSpace
+INFO         |      Ok: Disk space requirements to run avd: `Papaleco2` are met
+INFO         |   Checking: hasSufficientHwGpu
+INFO         |      Ok: Hardware GPU requirements to run avd: `Papaleco2` are passed
+INFO         |   Checking: hasSufficientSystem
+INFO         |      Ok: System requirements to run avd: `Papaleco2` are met
+INFO         | Loading snapshot 'default_boot'...
+WARNING      | Device 'encrypt' does not have the requested snapshot 'default_boot'
+
+WARNING      | Failed to load snapshot 'default_boot'
+INFO         | Activated packet streamer for uwb emulation
+INFO         | Activated packet streamer for bluetooth emulation
+INFO         | Boot completed in 13941 ms
+INFO         | Increasing screen off timeout, logcat buffer size to 2M.
+INFO         | Created VkInstance:0x145bd2600 for application: engine:.
+INFO         | Wait for emulator (pid 52233) 20 seconds to shutdown gracefully before kill;you can set environment variable ANDROID_EMULATOR_WAIT_TIME_BEFORE_KILL(in seconds) to change the default value (20 seconds)
+
+WARNING      | Not saving state: current state does not support snapshotting
+INFO         | Deleting snapshot default_boot
+ERROR        | Failed to restore previous context: 12297
+INFO         | Android emulator version 35.4.9.0 (build_id 13025442) (CL:N/A)
+INFO         | Graphics backend: gfxstream
+INFO         | Found systemPath /opt/homebrew/share/android-commandlinetools/system-images/android-36/google_apis_playstore/arm64-v8a/
+WARNING      | Please update the emulator to one that supports the feature(s): VulkanVirtualQueue
+INFO         | Increasing RAM size to 2048MB
+INFO         | Checking system compatibility:
+INFO         |   Checking: hasSufficientDiskSpace
+INFO         |      Ok: Disk space requirements to run avd: `Papaleco2` are met
+INFO         |   Checking: hasSufficientHwGpu
+INFO         |      Ok: Hardware GPU requirements to run avd: `Papaleco2` are passed
+INFO         |   Checking: hasSufficientSystem
+INFO         |      Ok: System requirements to run avd: `Papaleco2` are met
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_btn_xr_environment_living_room_day_clicked() (:0, )
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_btn_xr_environment_living_room_night_clicked() (:0, )
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_new_posture_requested(int) (:0, )
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_dismiss_posture_selection_dialog() (:0, )
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_new_resizable_requested(PresetEmulatorSizeType) (:0, )
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_dismiss_resizable_dialog() (:0, )
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_xr_environment_mode_changed(int) (:0, )
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_dismiss_xr_environment_mode_dialog() (:0, )
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_xr_input_mode_changed(int) (:0, )
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_dismiss_xr_input_mode_dialog() (:0, )
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_sleep_timer_done() (:0, )
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_unfold_timer_done() (:0, )
+INFO         | Storing crashdata in: /tmp/android-rennyluzardo/emu-crash-35.4.9.db, detection is enabled for process: 68489
+INFO         | Guest Driver: Auto (ext controls)
+library_mode host gpu mode host
+INFO         | Initializing hardware OpenGLES emulation support
+I0618 08:29:27.322662 25fdf00 opengles.cpp:285] android_startOpenglesRenderer: gpu info
+I0618 08:29:27.322684 25fdf00 opengles.cpp:286] 
+INFO         | HealthMonitor disabled.
+INFO         | initIcdPaths: ICD set to 'swiftshader', using Swiftshader ICD
+INFO         | Setting ICD filenames for the loader = /opt/homebrew/share/android-commandlinetools/emulator/qemu/darwin-aarch64/lib64/vulkan/vk_swiftshader_icd.json:/opt/homebrew/share/android-commandlinetools/emulator/lib64/vulkan/vk_swiftshader_icd.json
+INFO         | SharedLibrary::open for [/opt/homebrew/share/android-commandlinetools/emulator/qemu/darwin-aarch64/lib64/vulkan/libvulkan.dylib]
+
+INFO         | SharedLibrary::open for [/opt/homebrew/share/android-commandlinetools/emulator/qemu/darwin-aarch64/lib64/vulkan/libvulkan.dylib]: not found in map, open for the first time
+
+INFO         | SharedLibrary::open for [/opt/homebrew/share/android-commandlinetools/emulator/qemu/darwin-aarch64/lib64/vulkan/libvulkan.dylib] (posix): begin
+
+INFO         | SharedLibrary::open for [/opt/homebrew/share/android-commandlinetools/emulator/qemu/darwin-aarch64/lib64/vulkan/libvulkan.dylib] (posix,darwin): call dlopen
+
+INFO         | SharedLibrary::open for [/opt/homebrew/share/android-commandlinetools/emulator/qemu/darwin-aarch64/lib64/vulkan/libvulkan.dylib] (posix,darwin): failed, try again with [/opt/homebrew/share/android-commandlinetools/emulator/qemu/darwin-aarch64/lib64/vulkan/libvulkan.dylib]
+
+INFO         | SharedLibrary::open for [/opt/homebrew/share/android-commandlinetools/emulator/qemu/darwin-aarch64/lib64/vulkan/libvulkan.dylib] failed (posix). dlerror: []
+
+INFO         | SharedLibrary::open for [/opt/homebrew/share/android-commandlinetools/emulator/lib64/vulkan/libvulkan.dylib]
+
+INFO         | SharedLibrary::open for [/opt/homebrew/share/android-commandlinetools/emulator/lib64/vulkan/libvulkan.dylib]: not found in map, open for the first time
+
+INFO         | SharedLibrary::open for [/opt/homebrew/share/android-commandlinetools/emulator/lib64/vulkan/libvulkan.dylib] (posix): begin
+
+INFO         | SharedLibrary::open for [/opt/homebrew/share/android-commandlinetools/emulator/lib64/vulkan/libvulkan.dylib] (posix,darwin): call dlopen
+
+INFO         | Added library: /opt/homebrew/share/android-commandlinetools/emulator/lib64/vulkan/libvulkan.dylib
+INFO         | Selecting Vulkan device: SwiftShader Device (LLVM 10.0.0), Version: 1.2.0
+INFO         | Supports id properties, got a vulkan device UUID
+INFO         | SharedLibrary::open for [/System/Library/Frameworks/OpenGL.framework/OpenGL]: not found in map, open for the first time
+
+INFO         | SharedLibrary::open for [/System/Library/Frameworks/OpenGL.framework/OpenGL] (posix): begin
+
+INFO         | SharedLibrary::open for [/System/Library/Frameworks/OpenGL.framework/OpenGL] (posix,darwin): call dlopen
+
+INFO         | SharedLibrary::open for [libshadertranslator.dylib]: not found in map, open for the first time
+
+INFO         | SharedLibrary::open for [libshadertranslator.dylib] (posix): begin
+
+INFO         | SharedLibrary::open for [libshadertranslator.dylib] (posix,darwin): call dlopen
+
+INFO         | Initializing VkEmulation features:
+INFO         |     glInteropSupported: false
+INFO         |     useDeferredCommands: true
+INFO         |     createResourceWithRequirements: true
+INFO         |     useVulkanComposition: false
+INFO         |     useVulkanNativeSwapchain: false
+INFO         |     enable guestRenderDoc: false
+INFO         |     ASTC LDR emulation mode: 2
+INFO         |     enable ETC2 emulation: true
+INFO         |     enable Ycbcr emulation: false
+INFO         |     guestVulkanOnly: false
+INFO         |     useDedicatedAllocations: false
+INFO         | Graphics Adapter Vendor Google (Apple)
+INFO         | Graphics Adapter Android Emulator OpenGL ES Translator (Apple M2)
+INFO         | Graphics API Version OpenGL ES 3.0 (4.1 Metal - 89.4)
+INFO         | Graphics API Extensions GL_OES_EGL_sync GL_OES_EGL_image GL_OES_EGL_image_external GL_OES_depth24 GL_OES_depth32 GL_OES_element_index_uint GL_OES_texture_float GL_OES_texture_float_linear GL_OES_compressed_paletted_texture GL_OES_compressed_ETC1_RGB8_texture GL_OES_depth_texture GL_OES_texture_npot GL_OES_rgb8_rgba8 GL_EXT_color_buffer_float GL_EXT_color_buffer_half_float GL_EXT_texture_format_BGRA8888 GL_APPLE_texture_format_BGRA8888 
+INFO         | Graphics Device Extensions N/A
+INFO         | Sending adb public key [QAAAAHEatoNvmY1e5AVDipKm2qlQz6lIeZcBnjwiMli8uy4IlxjnTGOWxYDfBkOcC3EL/B1GNY1/mnr/0tQKaSUw4nn8vM0PHTHwYNHa53mKFpQ73xc2bOJUOoh1tC/h547efNqZ5UUk1sBxqQE/bTQNR2owGIZZcPBND9eRpMzVq9KDgoHRCBXP4fBqd9lRaysSrZp2NMokwrkpHf4WhmetzQK7Y1kOGmyxKENkNWMGJcrq6IWOMcqJLyowG5ylgRW1dl8Jmhl3w0sdrMCbCVulx4t16zMnXCORTiOvJacx19GJ1NKQUkZqootJgzfu36fh7SoLKEuJvb/9RpCiYSsHrVSfeC+6oZ9gmevGZq++kERRqTIVmygXzF3EAN98jyBfm2xtITkBjSZeiJoF0nKYheX1lahhpp70DkqwyqNuAOlx++OF3GhKHV/HIsy/uQNrdm630QWk6c90HLAuDVSBEIADBxYhQOYDqtZwjrOkPBfC9eWiEF2veaZFqc4vFYKB3KLDoKh0AHfUcvf1yKKYcPHuoNkV+eHtjulkiHPdRGC+U/K9AsrMlWP8xSl/j+W8gFlIBs9R+W5qcyVA18DAVxbuM3pxgcVs34UJHpqnUEnDVpGctZDwePywOXyPjbde6iXiaT8pv2pCZUg9Aw1sAX5aMapdm0q40/xR3IfLGecA0Je9hwEAAQA= rennyluzardo@unknown]
+INFO         | Userspace boot properties:
+INFO         |   androidboot.boot_devices=a003600.virtio_mmio
+INFO         |   androidboot.dalvik.vm.heapsize=512m
+INFO         |   androidboot.debug.hwui.renderer=skiagl
+INFO         |   androidboot.hardware=ranchu
+INFO         |   androidboot.hardware.gltransport=pipe
+INFO         |   androidboot.hardware.vulkan=ranchu
+INFO         |   androidboot.logcat=*:V
+INFO         |   androidboot.opengles.version=196608
+INFO         |   androidboot.qemu=1
+INFO         |   androidboot.qemu.adb.pubkey=QAAAAHEatoNvmY1e5AVDipKm2qlQz6lIeZcBnjwiMli8uy4IlxjnTGOWxYDfBkOcC3EL/B1GNY1/mnr/0tQKaSUw4nn8vM0PHTHwYNHa53mKFpQ73xc2bOJUOoh1tC/h547efNqZ5UUk1sBxqQE/bTQNR2owGIZZcPBND9eRpMzVq9KDgoHRCBXP4fBqd9lRaysSrZp2NMokwrkpHf4WhmetzQK7Y1kOGmyxKENkNWMGJcrq6IWOMcqJLyowG5ylgRW1dl8Jmhl3w0sdrMCbCVulx4t16zMnXCORTiOvJacx19GJ1NKQUkZqootJgzfu36fh7SoLKEuJvb/9RpCiYSsHrVSfeC+6oZ9gmevGZq++kERRqTIVmygXzF3EAN98jyBfm2xtITkBjSZeiJoF0nKYheX1lahhpp70DkqwyqNuAOlx++OF3GhKHV/HIsy/uQNrdm630QWk6c90HLAuDVSBEIADBxYhQOYDqtZwjrOkPBfC9eWiEF2veaZFqc4vFYKB3KLDoKh0AHfUcvf1yKKYcPHuoNkV+eHtjulkiHPdRGC+U/K9AsrMlWP8xSl/j+W8gFlIBs9R+W5qcyVA18DAVxbuM3pxgcVs34UJHpqnUEnDVpGctZDwePywOXyPjbde6iXiaT8pv2pCZUg9Aw1sAX5aMapdm0q40/xR3IfLGecA0Je9hwEAAQA= rennyluzardo@unknown
+INFO         |   androidboot.qemu.avd_name=Papaleco2
+INFO         |   androidboot.qemu.camera_hq_edge_processing=0
+INFO         |   androidboot.qemu.camera_protocol_ver=1
+INFO         |   androidboot.qemu.cpuvulkan.version=4202496
+INFO         |   androidboot.qemu.gltransport.drawFlushInterval=800
+INFO         |   androidboot.qemu.gltransport.name=pipe
+INFO         |   androidboot.qemu.hwcodec.avcdec=2
+INFO         |   androidboot.qemu.hwcodec.hevcdec=2
+INFO         |   androidboot.qemu.hwcodec.vpxdec=2
+INFO         |   androidboot.qemu.settings.system.screen_off_timeout=2147483647
+INFO         |   androidboot.qemu.virtiowifi=1
+INFO         |   androidboot.qemu.vsync=60
+INFO         |   androidboot.serialno=EMULATOR35X4X9X0
+INFO         |   androidboot.vbmeta.digest=499884d30783a384ac37278306ff7a9d573a5865d75af3e2347e0e5c41cd76cd
+INFO         |   androidboot.vbmeta.hash_alg=sha256
+INFO         |   androidboot.vbmeta.size=6720
+INFO         |   androidboot.veritymode=enforcing
+INFO         | Monitoring duration of emulator setup.
+WARNING      | The emulator now requires a signed jwt token for gRPC access! Use the -grpc flag if you really want an open unprotected grpc port
+INFO         | Using security allow list from: /opt/homebrew/share/android-commandlinetools/emulator/lib/emulator_access.json
+WARNING      | *** Basic token auth should only be used by android-studio ***
+INFO         | The active JSON Web Key Sets can be found here: /Users/rennyluzardo/Library/Caches/TemporaryItems/avd/running/68489/jwks/a69d8a40-692e-42e7-8b27-81ed75f49c0e/active.jwk
+INFO         | Scanning /Users/rennyluzardo/Library/Caches/TemporaryItems/avd/running/68489/jwks/a69d8a40-692e-42e7-8b27-81ed75f49c0e for jwk keys.
+INFO         | Started GRPC server at 127.0.0.1:8554, security: Local, auth: +token
+INFO         | Advertising in: /Users/rennyluzardo/Library/Caches/TemporaryItems/avd/running/pid_68489.ini
+INFO         | Setting display: 0 configuration to: 320x640, dpi: 160x160 
+INFO         | setDisplayActiveConfig 0
+INFO         | Checking system compatibility:
+INFO         |   Checking: hasSufficientDiskSpace
+INFO         |      Ok: Disk space requirements to run avd: `Papaleco2` are met
+INFO         |   Checking: hasSufficientHwGpu
+INFO         |      Ok: Hardware GPU requirements to run avd: `Papaleco2` are passed
+INFO         |   Checking: hasSufficientSystem
+INFO         |      Ok: System requirements to run avd: `Papaleco2` are met
+INFO         | Loading snapshot 'default_boot'...
+WARNING      | Device 'encrypt' does not have the requested snapshot 'default_boot'
+
+WARNING      | Failed to load snapshot 'default_boot'
+INFO         | Activated packet streamer for uwb emulation
+INFO         | Activated packet streamer for bluetooth emulation
+ERROR        | Failed to find ColorBuffer:41
+INFO         | Boot completed in 14584 ms
+INFO         | Increasing screen off timeout, logcat buffer size to 2M.
+INFO         | Created VkInstance:0x39e883e00 for application: engine:.
+INFO         | Created VkInstance:0x12e8eea00 for application: engine:.
+[68491:6443352:20250619,040056.921981:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-rennyluzardo/emu-crash-35.4.9.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-rennyluzardo/emu-crash-35.4.9.db/pending, NSURL=file:///tmp/android-rennyluzardo/emu-crash-35.4.9.db/pending, NSUnderlyingError=0x600001f68000 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[68493:6443369:20250619,040057.131684:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-rennyluzardo/emu-crash-35.4.9.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-rennyluzardo/emu-crash-35.4.9.db/pending, NSURL=file:///tmp/android-rennyluzardo/emu-crash-35.4.9.db/pending, NSUnderlyingError=0x600003ad4000 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[68491:6443352:20250619,141655.730412:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-rennyluzardo/emu-crash-35.4.9.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-rennyluzardo/emu-crash-35.4.9.db/pending, NSURL=file:///tmp/android-rennyluzardo/emu-crash-35.4.9.db/pending, NSUnderlyingError=0x600001f7c000 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[68493:6443369:20250619,141655.930164:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-rennyluzardo/emu-crash-35.4.9.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-rennyluzardo/emu-crash-35.4.9.db/pending, NSURL=file:///tmp/android-rennyluzardo/emu-crash-35.4.9.db/pending, NSUnderlyingError=0x600003ad4000 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+INFO         | Wait for emulator (pid 68489) 20 seconds to shutdown gracefully before kill;you can set environment variable ANDROID_EMULATOR_WAIT_TIME_BEFORE_KILL(in seconds) to change the default value (20 seconds)
+
+INFO         | Wait for emulator (pid 68489) 20 seconds to shutdown gracefully before kill;you can set environment variable ANDROID_EMULATOR_WAIT_TIME_BEFORE_KILL(in seconds) to change the default value (20 seconds)
+
+WARNING      | Not saving state: current state does not support snapshotting
+INFO         | Deleting snapshot default_boot
+ERROR        | Failed to restore previous context: 12297

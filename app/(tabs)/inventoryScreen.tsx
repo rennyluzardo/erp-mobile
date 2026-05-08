@@ -110,7 +110,7 @@ const InventoryScreen = () => {
   );
 
   const navigateToAddProduct = () => {
-    router.push('/(modal)/addProductScreen');
+    router.push('/(modal)/add-product/step1');
   };
 
   const handleGoBack = () => {

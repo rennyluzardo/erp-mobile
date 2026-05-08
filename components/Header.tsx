@@ -1,20 +1,20 @@
-import React, { useState, useRef, ReactNode, useEffect } from 'react';
+import React, { useState, useRef, ReactNode } from 'react';
 import { 
   View, 
   StyleSheet, 
-  Platform, 
-  TextInput, 
-  TouchableOpacity,
-  Animated, 
-  Keyboard,
   ScrollView,
   Dimensions,
+  TouchableOpacity,
+  Platform,
+  Animated,
+  Keyboard,
 } from 'react-native';
 import { useRouter, useNavigation } from 'expo-router';
 import { geckoGreen, primaryTextColor, secondaryColor } from '../constants/Colors';
 import { Ionicons } from '@expo/vector-icons';
-import { Appbar, Searchbar, Text } from 'react-native-paper';
-import { useSafeAreaInsets } from 'react-native-safe-area-context'; // Corrección aquí
+import { Text } from 'react-native-paper';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import SearchBar from './SearchBar';
 
 interface HeaderProps {
   showBackButton?: boolean;
@@ -29,6 +29,11 @@ interface HeaderProps {
   onFilterButtonPress?: () => void; // Función para manejar la presión del botón "Filtrar"
   onInternalBackPress?: () => void; // Nueva prop para notificar el presionado del botón interno de atrás en Android
   setShowBackButton?: () => void;
+  variant?: 'search' | 'simple'; // Nuevo: variant para diferentes modos
+  title?: string; // Nuevo: título para el modo simple
+  leftButtonText?: string; // Nuevo: texto personalizado para botón izquierdo
+  showMenu?: boolean; // Nuevo: mostrar/ocultar menú
+  onMenuPress?: () => void; // Nuevo: acción del menú
 }
 
 const Header = ({
@@ -43,27 +48,17 @@ const Header = ({
   onFilterPress,
   onFilterButtonPress,
   onInternalBackPress, // Recibe la nueva prop
+  variant = 'search', // Nuevo: variant por defecto
+  title = '', // Nuevo: título por defecto
+  leftButtonText = 'Atrás', // Nuevo: texto por defecto
+  showMenu = true, // Nuevo: mostrar menú por defecto
+  onMenuPress = () => {}, // Nuevo: acción por defecto
 }: HeaderProps) => {
   const router = useRouter();
   const navigation = useNavigation();
   const insets = useSafeAreaInsets();
   const [searchText, setSearchText] = useState('');
-  const [isFocused, setIsFocused] = useState(false);
-  const [showCancelButton, setShowCancelButton] = useState(false);
-  const searchInputRef = useRef<TextInput>(null);
   const { width, height } = Dimensions.get('window');
-  const appbarWidth = useRef(new Animated.Value(1)).current; // Starts at full width (for iOS animation)
-
-  const handleInternalBackPress = () => {
-    setIsFocused(false);
-    if (onBlurSearch) {
-      onBlurSearch();
-    }
-    if (onInternalBackPress) {
-      onInternalBackPress(); // Notifica al componente padre
-    }
-    Keyboard.dismiss(); // Asegurarse de que el teclado se cierre al presionar atrás
-  };
 
   const handleSearchChange = (text: string) => {
     setSearchText(text);
@@ -76,118 +71,48 @@ const Header = ({
     if (onSearchSubmit) {
       onSearchSubmit(searchText);
     }
-    Keyboard.dismiss();
   };
 
-  const handleFocus = () => {
-    console.log("handleFocus")
-    setIsFocused(true);
-    if (onFocusSearch) {
-      onFocusSearch();
-    }
-    if (Platform.OS === 'ios') {
-      setShowCancelButton(true);
-      Animated.timing(appbarWidth, {
-        toValue: 0.99,
-        duration: 200,
-        useNativeDriver: false,
-      }).start();
-    }
-  };
-
-  const handleBlur = () => {
-    console.log("handleblur")
-    setIsFocused(false);
-    // showBackButton
+  const handleInternalBackPress = () => {
     if (onBlurSearch) {
       onBlurSearch();
     }
-    if (Platform.OS === 'ios') {
-      setShowCancelButton(false);
-      Animated.timing(appbarWidth, {
-        toValue: 1,
-        duration: 200,
-        useNativeDriver: false,
-      }).start();
+    if (onInternalBackPress) {
+      onInternalBackPress();
     }
   };
 
-  const handleCancel = () => {
-    setSearchText('');
-    setShowCancelButton(false);
-    Keyboard.dismiss();
-    Animated.timing(appbarWidth, {
-      toValue: 1,
-      duration: 200,
-      useNativeDriver: false,
-    }).start(() => {
-      setIsFocused(false);
-      if (onBlurSearch) {
-        onBlurSearch();
-      }
-    });
-  };
-
-  const androidContent = (
-    <View style={{ flexDirection: 'row', alignItems: 'center', flex: 1 }}>
-      <TouchableOpacity
-        onPress={handleInternalBackPress}
-        style={[
-          styles.internalBackButton,
-          !isFocused && Platform.OS === 'android' && { width: 0, opacity: 0 }
-        ]}
-      >
-        <Ionicons name="arrow-back" size={24} color={primaryTextColor} />
-      </TouchableOpacity>
-      <Searchbar
-        placeholder="¿Qué necesitas hoy?"
-        onChangeText={handleSearchChange}
-        onIconPress={handleSearchSubmit}
-        style={{ flex: 1, height: 50, }}
-        icon={() => <Ionicons name="search" size={24} color={primaryTextColor} />}
-        value={searchText}
-        onFocus={handleFocus}
-        onBlur={handleBlur}
-        focusable={true}
-        onPress={handleFocus} // Mostrar el botón de atrás al tocar
-      />
-    </View>
-  );
-
-  const iosContent = (
-    <View style={{ flexDirection: 'row', alignItems: 'center', flex: 1 }}>
-      <Ionicons name="search" size={24} color={primaryTextColor} style={{ marginHorizontal: 8 }} />
-      <TextInput
-        ref={searchInputRef}
-        placeholder="¿Qué necesitas hoy?"
-        onChangeText={handleSearchChange}
-        onSubmitEditing={handleSearchSubmit}
-        style={[styles.iosSearchBarStyle, styles.iosSearchInputStyle, { flex: 1 }]}
-        onFocus={handleFocus}
-        onBlur={handleBlur}
-        value={searchText}
-      />
-      {showCancelButton && (
-        <TouchableOpacity onPress={handleCancel}>
-          <Text>Cancelar</Text>
+  // Render simple header for product form flow
+  if (variant === 'simple') {
+    return (
+      <View style={styles.simpleHeader}>
+        <TouchableOpacity onPress={onBackPress || onInternalBackPress} style={styles.simpleLeftButton}>
+          <Text style={styles.simpleLeftButtonText}>{leftButtonText}</Text>
         </TouchableOpacity>
-      )}
-    </View>
-  );
-
-  return (
-    <View>
-      <Appbar.Header statusBarHeight={Platform.OS === 'ios' ? insets.top : 0} style={styles.appbar}>
-        {showBackButton && Platform.OS === 'android' && !isFocused && (
-          <Appbar.BackAction onPress={onBackPress} color={primaryTextColor} />
+        <Text style={styles.simpleTitle}>{title}</Text>
+        {showMenu && (
+          <TouchableOpacity onPress={onMenuPress} style={styles.simpleMenuButton}>
+            <Text style={styles.simpleMenuButtonText}>⋮</Text>
+          </TouchableOpacity>
         )}
-        <Animated.View style={{ flex: Platform.OS === 'ios' ? appbarWidth : 1 }}>
-          {Platform.OS === 'android' ? androidContent : iosContent}
-        </Animated.View>
-        {/* <View style={{ flexDirection: 'row', alignItems: 'center' }}>
-          {rightComponent}
-        </View> */}
-      </Appbar.Header>
+      </View>
+    );
+  }
+
+  // Original search header
+  return (
+    <View style={{ paddingTop: insets.top }}>
+      <View style={styles.customHeader}>
+        <SearchBar
+          value={searchText}
+          onChangeText={handleSearchChange}
+          onSubmit={handleSearchSubmit}
+          onFocus={onFocusSearch}
+          onBlur={onBlurSearch}
+          showBackButton={showBackButton}
+          onBackPress={handleInternalBackPress}
+        />
+      </View>
 
       <View style={styles.filterBarContainer}>
         <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={styles.filterScrollViewContent}>
@@ -212,8 +137,12 @@ const Header = ({
 };
 
 const styles = StyleSheet.create({
-  appbar: {
-    // backgroundColor: geckoGreen,
+  customHeader: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingHorizontal: 16,
+    paddingVertical: 8,
+    minHeight: 56,
   },
   iosSearchBarStyle: Platform.OS === 'ios'
     ? {
@@ -269,6 +198,49 @@ const styles = StyleSheet.create({
   },
   internalBackButton: { // ¡Aquí está la definición del estilo faltante!
     marginRight: 8,
+  },
+  // Simple header styles for product form flow
+  simpleHeader: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    paddingHorizontal: 16,
+    paddingVertical: 12,
+    backgroundColor: '#FFFFFF',
+    borderBottomWidth: 1,
+    borderBottomColor: '#ddd',
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 1 },
+    shadowOpacity: 0.1,
+    shadowRadius: 2,
+    elevation: 3,
+  },
+  simpleLeftButton: {
+    paddingVertical: 8,
+    paddingHorizontal: 12,
+    minWidth: 60,
+  },
+  simpleLeftButtonText: {
+    fontSize: 16,
+    color: primaryTextColor,
+    fontWeight: '500',
+  },
+  simpleTitle: {
+    fontSize: 18,
+    fontWeight: 'bold',
+    color: primaryTextColor,
+    flex: 1,
+    textAlign: 'center',
+  },
+  simpleMenuButton: {
+    paddingVertical: 8,
+    paddingHorizontal: 12,
+    minWidth: 40,
+    alignItems: 'flex-end',
+  },
+  simpleMenuButtonText: {
+    fontSize: 24,
+    color: primaryTextColor,
   },
 });
 

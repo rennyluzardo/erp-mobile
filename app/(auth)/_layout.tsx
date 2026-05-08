@@ -8,6 +8,7 @@ import {
 } from "@react-navigation/native";
 import * as SplashScreen from 'expo-splash-screen';
 import { useDatabase } from '../_layout';
+import { getAuthToken, getUserId } from '../../utils/auth';
 
 SplashScreen.preventAutoHideAsync();
 
@@ -21,11 +22,22 @@ export default function AuthLayout() {
     async function prepare() {
       try {
         console.log('Checking user authentication...');
-        // TODO: implement real auth check
-        setIsAuthenticated(false);
-        await new Promise(resolve => setTimeout(resolve, 1500));
+        
+        // Check for existing auth token and user ID in secure storage
+        const authToken = await getAuthToken();
+        const userId = await getUserId();
+        
+        console.log('Auth token found:', !!authToken);
+        console.log('User ID found:', !!userId);
+        
+        // User is authenticated if both token and user ID exist
+        const isAuth = !!(authToken && userId);
+        setIsAuthenticated(isAuth);
+        
+        await new Promise(resolve => setTimeout(resolve, 1000));
       } catch (e) {
         console.warn('Error during app preparation:', e);
+        setIsAuthenticated(false);
       } finally {
         setAppIsReady(true);
         SplashScreen.hideAsync();

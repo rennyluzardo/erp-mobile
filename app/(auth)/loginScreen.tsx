@@ -5,6 +5,7 @@ import AuthForm from '../../components/AuthForm';
 import { useDatabase } from '../_layout';
 import { fetchUserByUsername } from '../../database/queries';
 import { primaryTextColor, geckoGreen } from '../../constants/Colors';
+import { saveAuthToken, saveUserId } from '../../utils/auth';
 
 const { width, height } = Dimensions.get('window');
 const isSmallScreen = width < 375;
@@ -41,7 +42,18 @@ export default function LoginScreen() {
 
         if (user && user.password === password) {
           console.log('Inicio de sesión exitoso para:', user.username);
-          router.replace('/(tabs)');
+          
+          // Save session data to secure storage
+          try {
+            await saveAuthToken(user.id.toString()); // Using user ID as a simple token for now
+            await saveUserId(user.id.toString());
+            console.log('Session data saved successfully');
+            
+            router.replace('/(tabs)');
+          } catch (saveError) {
+            console.error('Error saving session data:', saveError);
+            setLoginError('Error al guardar la sesión. Por favor, intenta de nuevo.');
+          }
         } else {
           setLoginError('Usuario o contraseña incorrectos.');
         }

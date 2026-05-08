@@ -114,7 +114,7 @@ const styles = StyleSheet.create({
   },
   content: {
     flex: 1,
-    padding: 16,
+    paddingHorizontal: 16,
   },
   sectionTitle: {
     fontSize: responsiveNormalTextFontSize + 4,
@@ -130,6 +130,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     marginBottom: 20,
+    marginTop: 16,
   },
   card1: {
     backgroundColor: gecko5,
