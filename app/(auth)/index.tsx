@@ -1,6 +1,6 @@
 // app/(tabs)/ventas.tsx
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, StyleSheet } from 'react-native';
 import Splash from '../../components/Splash'
 
 const Auth = () => {

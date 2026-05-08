@@ -55,7 +55,8 @@ export default function AuthLayout() {
       if (isAuthenticated) {
         router.replace('/(tabs)');
       } else {
-        router.replace('/loginScreen');
+        // Mostrar splash screen inicial, no redirigir automáticamente
+        // El usuario decidirá si registrarse o hacer login
       }
     }
   }, [appIsReady, isAuthenticated, router]);
@@ -67,7 +68,8 @@ export default function AuthLayout() {
   return (
     <ThemeProvider value={DefaultTheme}>
       <SafeAreaProvider>
-        <Stack initialRouteName='loginScreen'>
+        <Stack initialRouteName='index' screenOptions={{ headerShown: false }}>
+          <Stack.Screen name="index" options={{ headerShown: false }} />
           <Stack.Screen name="loginScreen" options={{ headerShown: false }} />
           <Stack.Screen name="registerScreen" options={{ headerShown: false }} />
           <Stack.Screen name="forgotPasswordScreen" options={{ headerShown: false }} />
