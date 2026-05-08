@@ -13,6 +13,7 @@ import {
 } from 'react-native';
 import { useRouter } from 'expo-router';
 import { secondaryColor } from '../constants/Colors'
+import { Ionicons } from '@expo/vector-icons';
 
 const erpGreen = '#25D366';
 const erpBlue = '#007bff';
@@ -69,6 +70,7 @@ const AuthForm = ({
   const [isEmailFocused, setIsEmailFocused] = useState(false);
   const [isConfirmPasswordFocused, setIsConfirmPasswordFocused] = useState(false);
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
+  const [showPassword, setShowPassword] = useState(false);
 
   const usernameAnim = useRef(new Animated.Value(0)).current;
   const passwordAnim = useRef(new Animated.Value(0)).current;
@@ -216,17 +218,29 @@ const AuthForm = ({
         </View>
       )}
 
-      <View style={styles.inputContainer}>
-        <Animated.Text style={getPlaceholderAnimationStyle(passwordAnim)}>Contraseña</Animated.Text>
-        <TextInput
-          style={[styles.input, { paddingRight: width * 0.28 }]}
-          value={password}
-          onChangeText={setPassword}
-          secureTextEntry
-          onFocus={() => handleFocus('password')}
-          onBlur={() => handleBlur('password')}
-          blurOnSubmit
-        />
+      <View style={styles.passwordContainer}>
+        <View style={styles.passwordInputContainer}>
+          <Animated.Text style={getPlaceholderAnimationStyle(passwordAnim)}>Contraseña</Animated.Text>
+          <TextInput
+            style={[styles.input, { paddingRight: width * 0.12 }]}
+            value={password}
+            onChangeText={setPassword}
+            secureTextEntry={!showPassword}
+            onFocus={() => handleFocus('password')}
+            onBlur={() => handleBlur('password')}
+            blurOnSubmit
+          />
+          <TouchableOpacity 
+            style={styles.eyeIcon} 
+            onPress={() => setShowPassword(!showPassword)}
+          >
+            <Ionicons 
+              name={showPassword ? 'eye-off' : 'eye'} 
+              size={20} 
+              color="#999" 
+            />
+          </TouchableOpacity>
+        </View>
         {
           isLogin && (
             <TouchableOpacity style={styles.forgotPasswordButton} onPress={() => router.push('/(auth)/forgotPasswordScreen')}>
@@ -342,6 +356,14 @@ const styles = StyleSheet.create({
     width: '100%',
     marginBottom: marginBottomMedium,
   },
+  passwordContainer: {
+    width: '100%',
+    marginBottom: marginBottomMedium,
+  },
+  passwordInputContainer: {
+    width: '100%',
+    marginBottom: 0,
+  },
   input: {
     width: '100%',
     height: inputHeight,
@@ -367,23 +389,20 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   forgotPasswordButton: {
-    position: 'absolute',
-    right: 0,
-    top: 0,
-    paddingTop: isAndroid ? 5 : 10,
-    paddingHorizontal: 10,
-    backgroundColor: 'transparent',
     alignSelf: 'flex-end',
-    marginTop: marginBottomSmall / 4,
-    flexDirection: 'row',
-    justifyContent: 'flex-end',
-    flexWrap: 'wrap',
-    width: 100,
-    textAlign: 'right',
+    marginTop: 5,
+    marginBottom: marginBottomMedium,
   },
   forgotPasswordText: {
     color: secondaryColor,
-    textAlign: 'right',
+    fontSize: smallTextFontSize,
+  },
+  eyeIcon: {
+    position: 'absolute',
+    right: 10,
+    top: '50%',
+    marginTop: -10,
+    padding: 5,
   },
   rememberMeContainer: {
     flexDirection: 'row',
