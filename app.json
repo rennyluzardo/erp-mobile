@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "gecko-app-1",
-    "slug": "gecko-app-1",
+    "name": "ERP-System",
+    "slug": "erp-system",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "geckoapp1",
+    "scheme": "erpsystem",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "splash": {
@@ -15,7 +15,7 @@
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.rennyluzardo.geckoapp1"
+      "bundleIdentifier": "com.rennyluzardo.erpsystem"
     },
     "android": {
       "adaptiveIcon": {
@@ -23,7 +23,7 @@
         "backgroundColor": "#ffffff"
       },
       "edgeToEdgeEnabled": true,
-      "package": "com.rennyluzardo.geckoapp1"
+      "package": "com.rennyluzardo.erpsystem"
     },
     "web": {
       "bundler": "metro",

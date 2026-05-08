@@ -7,7 +7,7 @@
     <key>CFBundleDevelopmentRegion</key>
     <string>$(DEVELOPMENT_LANGUAGE)</string>
     <key>CFBundleDisplayName</key>
-    <string>gecko-app-1</string>
+    <string>ERP-System</string>
     <key>CFBundleExecutable</key>
     <string>$(EXECUTABLE_NAME)</string>
     <key>CFBundleIdentifier</key>
@@ -27,8 +27,8 @@
       <dict>
         <key>CFBundleURLSchemes</key>
         <array>
-          <string>geckoapp1</string>
-          <string>com.rennyluzardo.geckoapp1</string>
+          <string>erpsystem</string>
+          <string>com.rennyluzardo.erpsystem</string>
         </array>
       </dict>
     </array>

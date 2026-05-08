@@ -2,18 +2,18 @@
 import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, Image, ScrollView } from 'react-native';
 import { useRouter } from 'expo-router';
-import { 
+import {
   primaryBackground, 
   primaryTextColor, 
   secondaryTextColor,
-  gecko4,
-  gecko5,
-  gecko6,
-  gecko7,
-  gecko8,
-  gecko3,
-  gecko2,
-  gecko1,
+  erp4,
+  erp5,
+  erp6,
+  erp7,
+  erp8,
+  erp3,
+  erp2,
+  erp1,
 } from '../../constants/Colors';
 import { responsiveNormalTextFontSize } from '../../constants/Fonts';
 import Header from '../../components/Header';
@@ -43,7 +43,7 @@ const HomeScreen = () => {
             style={styles.topImage}
           >
             {/* <Text>.png-2</Text> */}
-            <MaterialCommunityIcons name="sale" size={60} color={gecko7}/>
+            <MaterialCommunityIcons name="sale" size={60} color={erp7}/>
           </View>
           <View style={styles.topTextContainer}>
             <Text style={[styles.topTitle, styles.cardTitle1]}>Ventas</Text>
@@ -59,7 +59,7 @@ const HomeScreen = () => {
           <View 
             style={styles.topImage}
           >
-            <MaterialCommunityIcons name="cart" size={60} color={gecko6} />
+            <MaterialCommunityIcons name="cart" size={60} color={erp6} />
           </View>
           <View style={styles.topTextContainer}>
             <Text style={[styles.topTitle, styles.cardTitle2]}>Compras</Text>
@@ -133,10 +133,10 @@ const styles = StyleSheet.create({
     marginTop: 16,
   },
   card1: {
-    backgroundColor: gecko5,
+    backgroundColor: erp5,
   },
   card2: {
-    backgroundColor: gecko4,
+    backgroundColor: erp4,
   },
   topImage: {
     width: 80,
@@ -154,10 +154,10 @@ const styles = StyleSheet.create({
     // fontWeight: 'bold',
   },
   cardTitle1: {
-    color: gecko7,
+    color: erp7,
   },
   cardTitle2: {
-    color: gecko6,
+    color: erp6,
   },
   topSubtitle: {
     fontSize: responsiveNormalTextFontSize,
@@ -172,7 +172,7 @@ const styles = StyleSheet.create({
     overflow: 'scroll',
   },
   otherCategoryCard: {
-    backgroundColor: gecko8,
+    backgroundColor: erp8,
     borderRadius: '30%',
     padding: 16,
     width: 95,

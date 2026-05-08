@@ -2087,7 +2087,7 @@ DEPENDENCIES:
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
   - RNReanimated (from `../node_modules/react-native-reanimated`)
   - RNScreens (from `../node_modules/react-native-screens`)
-  - "simdjson (from `/Users/rennyluzardo/Projects/gecko-app-1/node_modules/@nozbe/simdjson`)"
+  - "simdjson (from `/Users/rennyluzardo/Projects/erp-system/node_modules/@nozbe/simdjson`)"
   - "WatermelonDB (from `../node_modules/@nozbe/watermelondb`)"
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
@@ -2273,7 +2273,7 @@ EXTERNAL SOURCES:
   RNScreens:
     :path: "../node_modules/react-native-screens"
   simdjson:
-    :path: "/Users/rennyluzardo/Projects/gecko-app-1/node_modules/@nozbe/simdjson"
+    :path: "/Users/rennyluzardo/Projects/erp-system/node_modules/@nozbe/simdjson"
   WatermelonDB:
     :path: "../node_modules/@nozbe/watermelondb"
   Yoga:

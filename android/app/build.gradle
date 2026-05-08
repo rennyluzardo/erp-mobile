@@ -87,9 +87,9 @@ android {
     buildToolsVersion rootProject.ext.buildToolsVersion
     compileSdk rootProject.ext.compileSdkVersion
 
-    namespace 'com.rennyluzardo.geckoapp1'
+    namespace 'com.rennyluzardo.erpsystem'
     defaultConfig {
-        applicationId 'com.rennyluzardo.geckoapp1'
+        applicationId 'com.rennyluzardo.erpsystem'
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

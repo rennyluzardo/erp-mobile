@@ -3,7 +3,7 @@ import React, { useState, useEffect, useCallback } from 'react';
 import { View, Text, StyleSheet, FlatList, TouchableOpacity, Dimensions, Platform } from 'react-native'; // Importa Platform desde 'react-native'
 import { useRouter } from 'expo-router';
 import {
-  geckoGreen,
+  erpGreen,
   primaryBackground,
   primaryTextColor,
   secondaryTextColor
@@ -238,7 +238,7 @@ const styles = StyleSheet.create({
   itemPriceUSD: {
     fontSize: responsiveNormalTextFontSize,
     fontWeight: 'bold',
-    color: geckoGreen,
+    color: erpGreen,
     marginBottom: 1,
   },
   itemPriceBS: {
@@ -246,7 +246,7 @@ const styles = StyleSheet.create({
     color: secondaryTextColor,
   },
   primaryButton: {
-    backgroundColor: geckoGreen,
+    backgroundColor: erpGreen,
     borderRadius: borderRadiusStandard,
     alignItems: 'center',
     justifyContent: 'center',

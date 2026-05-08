@@ -14,8 +14,8 @@ import {
 import { useRouter } from 'expo-router';
 import { secondaryColor } from '../constants/Colors'
 
-const geckoGreen = '#25D366';
-const geckoBlue = '#007bff';
+const erpGreen = '#25D366';
+const erpBlue = '#007bff';
 const textColor = '#333';
 const textColorWhite = '#fff';
 const placeholderColor = '#999';
@@ -352,7 +352,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 0,
   },
   button: {
-    backgroundColor: geckoGreen,
+    backgroundColor: erpGreen,
     alignItems: 'center',
     justifyContent: 'center',
     width: '100%',
@@ -410,7 +410,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'transparent',
   },
   checkboxChecked: {
-    backgroundColor: geckoGreen,
+    backgroundColor: erpGreen,
   },
   rememberMeText: {
     color: textColor,

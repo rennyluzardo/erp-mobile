@@ -12,7 +12,7 @@ import {
 import { useRouter } from 'expo-router';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import {
-  geckoGreen,
+  erpGreen,
   primaryBackground,
   primaryTextColor,
   secondaryTextColor,
@@ -429,7 +429,7 @@ const styles = StyleSheet.create({
     marginBottom: 8,
   },
   activeDot: {
-    backgroundColor: geckoGreen,
+    backgroundColor: erpGreen,
   },
   progressText: {
     fontSize: responsiveNormalTextFontSize - 2,
@@ -437,7 +437,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   activeText: {
-    color: geckoGreen,
+    color: erpGreen,
     fontWeight: 'bold',
   },
   content: {
@@ -557,7 +557,7 @@ const styles = StyleSheet.create({
   },
   addNewItemText: {
     fontSize: responsiveNormalTextFontSize,
-    color: geckoGreen,
+    color: erpGreen,
     fontWeight: '500',
   },
   checkboxContainer: {
@@ -576,8 +576,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   checkboxChecked: {
-    backgroundColor: geckoGreen,
-    borderColor: geckoGreen,
+    backgroundColor: erpGreen,
+    borderColor: erpGreen,
   },
   checkmark: {
     color: '#fff',
@@ -615,7 +615,7 @@ const styles = StyleSheet.create({
   },
   nextButton: {
     flex: 1,
-    backgroundColor: geckoGreen,
+    backgroundColor: erpGreen,
     borderRadius: borderRadiusStandard,
     paddingVertical: buttonPaddingVertical,
     marginLeft: 8,
@@ -685,7 +685,7 @@ const styles = StyleSheet.create({
     color: primaryTextColor,
   },
   confirmModalButton: {
-    backgroundColor: geckoGreen,
+    backgroundColor: erpGreen,
     marginLeft: 8,
   },
   confirmModalButtonText: {

@@ -13,7 +13,7 @@ import {
 import { useRouter } from 'expo-router';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import {
-  geckoGreen,
+  erpGreen,
   primaryBackground,
   primaryTextColor,
   secondaryTextColor,
@@ -252,7 +252,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#ddd',
   },
   activeDot: {
-    backgroundColor: geckoGreen,
+    backgroundColor: erpGreen,
   },
   progressText: {
     fontSize: responsiveNormalTextFontSize - 2,
@@ -261,7 +261,7 @@ const styles = StyleSheet.create({
     marginTop: 4,
   },
   activeText: {
-    color: geckoGreen,
+    color: erpGreen,
     fontWeight: 'bold',
   },
   content: {
@@ -351,7 +351,7 @@ const styles = StyleSheet.create({
   },
   nextButton: {
     flex: 1,
-    backgroundColor: geckoGreen,
+    backgroundColor: erpGreen,
     borderRadius: borderRadiusStandard,
     paddingVertical: buttonPaddingVertical,
     marginLeft: 8,

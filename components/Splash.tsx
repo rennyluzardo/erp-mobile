@@ -4,18 +4,18 @@ import { View, Text, StyleSheet, Image, TouchableOpacity, Dimensions } from 'rea
 import { useRouter } from 'expo-router';
 // import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import { 
-  geckoGreen,
+  erpGreen,
   secondaryColor,
-  gecko1,
-  gecko2,
-  gecko3,
+  erp1,
+  erp2,
+  erp3,
   primaryTextColor,
   secondaryTextColor, 
 } from '../constants/Colors';
-// const geckoGreen = '#25D366';
+// const erpGreen = '#25D366';
 // const secondayColor = '#F08080';
-// const gecko1 = '#E0FF86';
-// const geckoBlue = '#E0FF86';
+// const erp1 = '#E0FF86';
+// const erpBlue = '#E0FF86';
 // const primaryTextColor = '#333';
 // const secondaryTextColor = '#777';
 import { responsiveNormalTextFontSize } from '../constants/Fonts'
@@ -74,7 +74,7 @@ const Splash = () => {
       <View style={styles.bottomContainer}>
         <View style={styles.textContainer}>
           <Text style={styles.title}>
-            Administra tu negocio con <Text style={styles.geckoText}>Gecko</Text>
+            Administra tu negocio con <Text style={styles.erpText}>ERP-System</Text>
           </Text>
           <Text style={styles.subtitle}>
             Lleva el control de tu negocio desde tu celular y administra tus ventas de manera simple.
@@ -119,7 +119,7 @@ const styles = StyleSheet.create({
   carouselImage: {
     width: 200,
     height: 200,
-    backgroundColor: gecko1,
+    backgroundColor: erp1,
     borderRadius: '50%',
     justifyContent: 'center',
     alignItems: 'center'
@@ -130,7 +130,7 @@ const styles = StyleSheet.create({
     top: '50%',
     transform: [{ translateY: -12 }],
     padding: 10,
-    color: gecko1,
+    color: erp1,
   },
   arrowRight: {
     position: 'absolute',
@@ -173,8 +173,8 @@ const styles = StyleSheet.create({
     marginBottom: 10,
     fontSize: responsiveTitleFontSize,
   },
-  geckoText: {
-    color: geckoGreen,
+  erpText: {
+    color: erpGreen,
     fontSize: 18,
   },
   subtitle: {
@@ -184,7 +184,7 @@ const styles = StyleSheet.create({
     fontSize: responsiveSubtitleFontSize,
   },
   primaryButton: {
-    backgroundColor: geckoGreen,
+    backgroundColor: erpGreen,
     borderRadius: 10,
     paddingVertical: 15,
     paddingHorizontal: 60,

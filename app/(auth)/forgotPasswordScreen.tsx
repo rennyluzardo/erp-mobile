@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { View, Text, StyleSheet, Dimensions, ScrollView, KeyboardAvoidingView, Platform, TouchableOpacity } from 'react-native';
 import { useRouter } from 'expo-router';
 import AuthForm from '../../components/AuthForm';
-import { primaryTextColor, geckoGreen } from '../../constants/Colors';
+import { primaryTextColor, erpGreen } from '../../constants/Colors';
 import { responsiveNormalTextFontSize } from '../../constants/Fonts';
 
 const { width, height } = Dimensions.get('window');
@@ -47,7 +47,7 @@ const ForgotPasswordScreen = () => {
         <View style={styles.container}>
           <View style={styles.logoContainer}>
             <View style={styles.logoPlaceholder} />
-            <Text style={[styles.logoText, { fontSize: logoTextSize }]}>Gecko</Text>
+            <Text style={[styles.logoText, { fontSize: logoTextSize }]}>ERP-System</Text>
             <Text
               style={[styles.subtitle, { width: width * subtitleWidthPercentage, textAlign: 'center', fontSize: responsiveNormalTextFontSize }]}
             >
@@ -101,7 +101,7 @@ const styles = StyleSheet.create({
   logoText: {
     fontSize: logoTextSize,
     fontWeight: 'bold',
-    color: geckoGreen,
+    color: erpGreen,
     textAlign: 'center',
     marginBottom: marginBottomSmall / 4,
   },
@@ -127,7 +127,7 @@ const styles = StyleSheet.create({
     marginTop: marginBottomLarge,
   },
   backToLoginText: {
-    color: geckoGreen,
+    color: erpGreen,
     fontWeight: 'bold',
     fontSize: responsiveNormalTextFontSize,
   },

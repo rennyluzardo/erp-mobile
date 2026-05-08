@@ -4,7 +4,7 @@ import { useRouter } from 'expo-router';
 import AuthForm from '../../components/AuthForm';
 import { useDatabase } from '../_layout';
 import { fetchUserByUsername } from '../../database/queries';
-import { primaryTextColor, geckoGreen } from '../../constants/Colors';
+import { primaryTextColor, erpGreen } from '../../constants/Colors';
 import { saveAuthToken, saveUserId } from '../../utils/auth';
 
 const { width, height } = Dimensions.get('window');
@@ -83,7 +83,7 @@ export default function LoginScreen() {
           <View style={styles.logoContainer}>
             <View style={[styles.logoPlaceholder, { width: logoSize, height: logoSize, borderRadius: logoSize / 3.5 }]} />
             <>
-              <Text style={styles.logoText}>Gecko</Text>
+              <Text style={styles.logoText}>ERP-System</Text>
               <Text style={styles.subtitle}>
                 Tu negocio a la mano
               </Text>
@@ -141,7 +141,7 @@ const styles = StyleSheet.create({
   logoText: {
     fontSize: logoTextSize,
     fontWeight: 'bold',
-    color: geckoGreen,
+    color: erpGreen,
     textAlign: 'center',
     marginBottom: marginBottomSmall / 4,
   },
@@ -160,7 +160,7 @@ const styles = StyleSheet.create({
     color: primaryTextColor,
   },
   actionText: {
-    color: geckoGreen,
+    color: erpGreen,
     fontWeight: 'bold',
   },
 });

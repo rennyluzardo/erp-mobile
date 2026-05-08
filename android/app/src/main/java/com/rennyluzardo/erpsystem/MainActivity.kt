@@ -1,4 +1,4 @@
-package com.rennyluzardo.geckoapp1
+package com.rennyluzardo.erpsystem
 import expo.modules.splashscreen.SplashScreenManager
 
 import android.os.Build

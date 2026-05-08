@@ -7,7 +7,7 @@ import { useDatabase } from '../_layout';
 import { fetchUserByUsername } from '../../database/queries';
 import { User } from '../../database/models/user';
 
-const geckoGreen = '#25D366';
+const erpGreen = '#25D366';
 const textColorWhite = '#fff';
 
 export default function ProfileScreen() {
@@ -84,7 +84,7 @@ const styles = StyleSheet.create({
     color: '#333',
   },
   primaryButton: {
-    backgroundColor: geckoGreen,
+    backgroundColor: erpGreen,
     borderRadius: 10,
     paddingVertical: 12,
     alignItems: 'center',

@@ -10,7 +10,7 @@ import {
   Keyboard,
 } from 'react-native';
 import { useRouter, useNavigation } from 'expo-router';
-import { geckoGreen, primaryTextColor, secondaryColor } from '../constants/Colors';
+import { erpGreen, primaryTextColor, secondaryColor } from '../constants/Colors';
 import { Ionicons } from '@expo/vector-icons';
 import { Text } from 'react-native-paper';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';

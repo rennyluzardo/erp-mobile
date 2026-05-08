@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "geckoapp1.app"
-               BlueprintName = "geckoapp1"
-               ReferencedContainer = "container:geckoapp1.xcodeproj">
+               BuildableName = "erpsystem.app"
+               BlueprintName = "erpsystem"
+               ReferencedContainer = "container:erpsystem.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "geckoapp1Tests.xctest"
-               BlueprintName = "geckoapp1Tests"
-               ReferencedContainer = "container:geckoapp1.xcodeproj">
+               BuildableName = "erpsystemTests.xctest"
+               BlueprintName = "erpsystemTests"
+               ReferencedContainer = "container:erpsystem.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "geckoapp1.app"
-            BlueprintName = "geckoapp1"
-            ReferencedContainer = "container:geckoapp1.xcodeproj">
+            BuildableName = "erpsystem.app"
+            BlueprintName = "erpsystem"
+            ReferencedContainer = "container:erpsystem.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "geckoapp1.app"
-            BlueprintName = "geckoapp1"
-            ReferencedContainer = "container:geckoapp1.xcodeproj">
+            BuildableName = "erpsystem.app"
+            BlueprintName = "erpsystem"
+            ReferencedContainer = "container:erpsystem.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

@@ -6,7 +6,7 @@ let db: SQLite.SQLiteDatabase | null = null;
 export async function getDatabase(): Promise<SQLite.SQLiteDatabase> {
   if (db) return db;
 
-  db = await SQLite.openDatabaseAsync('gecko-app.db');
+  db = await SQLite.openDatabaseAsync('erp-system.db');
 
   // Enable WAL mode for better performance
   await db.execAsync('PRAGMA journal_mode = WAL;');

@@ -10,26 +10,26 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */; };
 		9666E45BF739197D77B559DB /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 1783406F5ECCD098D1848803 /* PrivacyInfo.xcprivacy */; };
-		989C53C1B9908C77139C6D21 /* libPods-geckoapp1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D523FFEB99FB6D468B193DF /* libPods-geckoapp1.a */; };
+		989C53C1B9908C77139C6D21 /* libPods-erpsystem.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D523FFEB99FB6D468B193DF /* libPods-erpsystem.a */; };
 		BB2F792D24A3F905000567C9 /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2F792C24A3F905000567C9 /* Expo.plist */; };
 		EFA1FEBD327C184E259A8E93 /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51DE7228DBCB59738AF575C /* ExpoModulesProvider.swift */; };
 		F11748422D0307B40044C1D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11748412D0307B40044C1D9 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		13B07F961A680F5B00A75B9A /* geckoapp1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = geckoapp1.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = geckoapp1/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = geckoapp1/Info.plist; sourceTree = "<group>"; };
-		16D5C10C98AE7FE3748E4C99 /* Pods-geckoapp1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-geckoapp1.release.xcconfig"; path = "Target Support Files/Pods-geckoapp1/Pods-geckoapp1.release.xcconfig"; sourceTree = "<group>"; };
-		1783406F5ECCD098D1848803 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = geckoapp1/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
-		5D523FFEB99FB6D468B193DF /* libPods-geckoapp1.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-geckoapp1.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SplashScreen.storyboard; path = geckoapp1/SplashScreen.storyboard; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* erpsystem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = erpsystem.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = erpsystem/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = erpsystem/Info.plist; sourceTree = "<group>"; };
+		16D5C10C98AE7FE3748E4C99 /* Pods-erpsystem.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-erpsystem.release.xcconfig"; path = "Target Support Files/Pods-erpsystem/Pods-erpsystem.release.xcconfig"; sourceTree = "<group>"; };
+		1783406F5ECCD098D1848803 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = erpsystem/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		5D523FFEB99FB6D468B193DF /* libPods-erpsystem.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-erpsystem.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SplashScreen.storyboard; path = erpsystem/SplashScreen.storyboard; sourceTree = "<group>"; };
 		BB2F792C24A3F905000567C9 /* Expo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Expo.plist; sourceTree = "<group>"; };
-		D8277F100DCE7537F9AAE28B /* Pods-geckoapp1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-geckoapp1.debug.xcconfig"; path = "Target Support Files/Pods-geckoapp1/Pods-geckoapp1.debug.xcconfig"; sourceTree = "<group>"; };
-		E51DE7228DBCB59738AF575C /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-geckoapp1/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
+		D8277F100DCE7537F9AAE28B /* Pods-erpsystem.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-erpsystem.debug.xcconfig"; path = "Target Support Files/Pods-erpsystem/Pods-erpsystem.debug.xcconfig"; sourceTree = "<group>"; };
+		E51DE7228DBCB59738AF575C /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-erpsystem/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		F11748412D0307B40044C1D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = geckoapp1/AppDelegate.swift; sourceTree = "<group>"; };
-		F11748442D0722820044C1D9 /* geckoapp1-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "geckoapp1-Bridging-Header.h"; path = "geckoapp1/geckoapp1-Bridging-Header.h"; sourceTree = "<group>"; };
+		F11748412D0307B40044C1D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = erpsystem/AppDelegate.swift; sourceTree = "<group>"; };
+		F11748442D0722820044C1D9 /* erpsystem-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "erpsystem-Bridging-Header.h"; path = "erpsystem/erpsystem-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,32 +37,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				989C53C1B9908C77139C6D21 /* libPods-geckoapp1.a in Frameworks */,
+				989C53C1B9908C77139C6D21 /* libPods-erpsystem.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		13B07FAE1A68108700A75B9A /* geckoapp1 */ = {
+		13B07FAE1A68108700A75B9A /* erpsystem */ = {
 			isa = PBXGroup;
 			children = (
 				F11748412D0307B40044C1D9 /* AppDelegate.swift */,
-				F11748442D0722820044C1D9 /* geckoapp1-Bridging-Header.h */,
+				F11748442D0722820044C1D9 /* erpsystem-Bridging-Header.h */,
 				BB2F792B24A3F905000567C9 /* Supporting */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */,
 				1783406F5ECCD098D1848803 /* PrivacyInfo.xcprivacy */,
 			);
-			name = geckoapp1;
+			name = erpsystem;
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				5D523FFEB99FB6D468B193DF /* libPods-geckoapp1.a */,
+				5D523FFEB99FB6D468B193DF /* libPods-erpsystem.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -70,7 +70,7 @@
 		60EE6EDB2BA1DBE2DBD091B9 /* ExpoModulesProviders */ = {
 			isa = PBXGroup;
 			children = (
-				D5F86AF9033F4B8B4B8F2C32 /* geckoapp1 */,
+				D5F86AF9033F4B8B4B8F2C32 /* erpsystem */,
 			);
 			name = ExpoModulesProviders;
 			sourceTree = "<group>";
@@ -85,7 +85,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				13B07FAE1A68108700A75B9A /* geckoapp1 */,
+				13B07FAE1A68108700A75B9A /* erpsystem */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
@@ -100,7 +100,7 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* geckoapp1.app */,
+				13B07F961A680F5B00A75B9A /* erpsystem.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -108,8 +108,8 @@
 		A6394C52E1288BE64C9C6693 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D8277F100DCE7537F9AAE28B /* Pods-geckoapp1.debug.xcconfig */,
-				16D5C10C98AE7FE3748E4C99 /* Pods-geckoapp1.release.xcconfig */,
+				D8277F100DCE7537F9AAE28B /* Pods-erpsystem.debug.xcconfig */,
+				16D5C10C98AE7FE3748E4C99 /* Pods-erpsystem.release.xcconfig */,
 			);
 			name = Pods;
 			path = Pods;
@@ -121,23 +121,23 @@
 				BB2F792C24A3F905000567C9 /* Expo.plist */,
 			);
 			name = Supporting;
-			path = geckoapp1/Supporting;
+			path = erpsystem/Supporting;
 			sourceTree = "<group>";
 		};
-		D5F86AF9033F4B8B4B8F2C32 /* geckoapp1 */ = {
+		D5F86AF9033F4B8B4B8F2C32 /* erpsystem */ = {
 			isa = PBXGroup;
 			children = (
 				E51DE7228DBCB59738AF575C /* ExpoModulesProvider.swift */,
 			);
-			name = geckoapp1;
+			name = erpsystem;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		13B07F861A680F5B00A75B9A /* geckoapp1 */ = {
+		13B07F861A680F5B00A75B9A /* erpsystem */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "geckoapp1" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "erpsystem" */;
 			buildPhases = (
 				08A4A3CD28434E44B6B9DE2E /* [CP] Check Pods Manifest.lock */,
 				EEDD0B8BED2ECD4C644231B3 /* [Expo] Configure project */,
@@ -152,9 +152,9 @@
 			);
 			dependencies = (
 			);
-			name = geckoapp1;
-			productName = geckoapp1;
-			productReference = 13B07F961A680F5B00A75B9A /* geckoapp1.app */;
+			name = erpsystem;
+			productName = erpsystem;
+			productReference = 13B07F961A680F5B00A75B9A /* erpsystem.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -170,7 +170,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "geckoapp1" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "erpsystem" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -183,7 +183,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* geckoapp1 */,
+				13B07F861A680F5B00A75B9A /* erpsystem */,
 			);
 		};
 /* End PBXProject section */
@@ -233,7 +233,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-geckoapp1-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-erpsystem-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -246,7 +246,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-geckoapp1/Pods-geckoapp1-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-erpsystem/Pods-erpsystem-frameworks.sh",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/hermes-engine/Pre-built/hermes.framework/hermes",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -255,7 +255,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-geckoapp1/Pods-geckoapp1-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-erpsystem/Pods-erpsystem-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		800E24972A6A228C8D4807E9 /* [CP] Copy Pods Resources */ = {
@@ -264,7 +264,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-geckoapp1/Pods-geckoapp1-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-erpsystem/Pods-erpsystem-resources.sh",
 				"${PODS_CONFIGURATION_BUILD_DIR}/EXConstants/EXConstants.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/EXConstants/ExpoConstants_privacy.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/ExpoFileSystem/ExpoFileSystem_privacy.bundle",
@@ -289,7 +289,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-geckoapp1/Pods-geckoapp1-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-erpsystem/Pods-erpsystem-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		EEDD0B8BED2ECD4C644231B3 /* [Expo] Configure project */ = {
@@ -309,7 +309,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# This script configures Expo modules and generates the modules provider file.\nbash -l -c \"./Pods/Target\\ Support\\ Files/Pods-geckoapp1/expo-configure-project.sh\"\n";
+			shellScript = "# This script configures Expo modules and generates the modules provider file.\nbash -l -c \"./Pods/Target\\ Support\\ Files/Pods-erpsystem/expo-configure-project.sh\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -328,18 +328,18 @@
 /* Begin XCBuildConfiguration section */
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D8277F100DCE7537F9AAE28B /* Pods-geckoapp1.debug.xcconfig */;
+			baseConfigurationReference = D8277F100DCE7537F9AAE28B /* Pods-erpsystem.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = geckoapp1/geckoapp1.entitlements;
+				CODE_SIGN_ENTITLEMENTS = erpsystem/erpsystem.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_BITCODE = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"FB_SONARKIT_ENABLED=1",
 				);
-				INFOPLIST_FILE = geckoapp1/Info.plist;
+				INFOPLIST_FILE = erpsystem/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -352,9 +352,9 @@
 					"-lc++",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_DEBUG";
-				PRODUCT_BUNDLE_IDENTIFIER = com.rennyluzardo.geckoapp1;
-				PRODUCT_NAME = geckoapp1;
-				SWIFT_OBJC_BRIDGING_HEADER = "geckoapp1/geckoapp1-Bridging-Header.h";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rennyluzardo.erpsystem;
+				PRODUCT_NAME = erpsystem;
+				SWIFT_OBJC_BRIDGING_HEADER = "erpsystem/erpsystem-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -364,13 +364,13 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 16D5C10C98AE7FE3748E4C99 /* Pods-geckoapp1.release.xcconfig */;
+			baseConfigurationReference = 16D5C10C98AE7FE3748E4C99 /* Pods-erpsystem.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = geckoapp1/geckoapp1.entitlements;
+				CODE_SIGN_ENTITLEMENTS = erpsystem/erpsystem.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
-				INFOPLIST_FILE = geckoapp1/Info.plist;
+				INFOPLIST_FILE = erpsystem/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -383,9 +383,9 @@
 					"-lc++",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_RELEASE";
-				PRODUCT_BUNDLE_IDENTIFIER = com.rennyluzardo.geckoapp1;
-				PRODUCT_NAME = geckoapp1;
-				SWIFT_OBJC_BRIDGING_HEADER = "geckoapp1/geckoapp1-Bridging-Header.h";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rennyluzardo.erpsystem;
+				PRODUCT_NAME = erpsystem;
+				SWIFT_OBJC_BRIDGING_HEADER = "erpsystem/erpsystem-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -519,7 +519,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "geckoapp1" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "erpsystem" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -528,7 +528,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "geckoapp1" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "erpsystem" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,
