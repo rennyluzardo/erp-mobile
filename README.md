@@ -32,7 +32,15 @@ ERP-System es una aplicación móvil integral que permite a las empresas gestion
 - Feedback sonoro para confirmación de escaneo
 - Soporte para múltiples formatos de códigos de barras
 
-## 🛠️ Stack Tecnológico
+## � Historia del Proyecto
+
+Este proyecto es la evolución de un prototipo construido en 2022-2023 
+mientras exploraba la arquitectura de aplicaciones móviles offline-first.
+
+- **2022-2023:** Prototipo inicial → [ERPMobile](https://github.com/rennyluzardo/ERPMobile)
+- **2025 – presente:** Reescritura completa con stack moderno y arquitectura escalable
+
+## �🛠️ Stack Tecnológico
 
 ### Core Framework
 - **Expo SDK 54** - Plataforma de desarrollo principal
