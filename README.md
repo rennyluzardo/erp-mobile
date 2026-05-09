@@ -1,250 +1,186 @@
-# ERP-System
+# ERP-System · Mobile ERP for SMBs
 
-<p align="center">
-  <img src="./assets/images/splash.png" alt="ERP-System Logo" width="300">
-</p>
+> React Native · Expo SDK 54 · SQLite · TypeScript · Offline-First
 
-Un sistema móvil de gestión empresarial (ERP) diseñado para el control completo de inventario, ventas y compras con proveedores.
+A production-grade mobile ERP built for small and mid-size businesses — handling inventory, sales with FIFO costing, barcode scanning, and supplier purchases. Designed to work fully offline with local SQLite persistence.
 
-## 📋 Descripción del Negocio
+---
 
-ERP-System es una aplicación móvil integral que permite a las empresas gestionar sus operaciones diarias de manera eficiente:
+## 📌 Historia del Proyecto
 
-### 📦 Control de Inventario
-- Gestión completa de productos y existencias
-- Seguimiento en tiempo real del stock disponible
-- Categorización y organización de productos
-
-### 💪 Gestión de Ventas
-- Creación y gestión de pedidos de venta
-- Integración con escáner de códigos de barras para agregar productos rápidamente
-- Sistema FIFO (First In, First Out) para rotación óptima de inventario
-- Cálculo automático de totales y impuestos
-
-### 🛒 Compras a Proveedores
-- Gestión de pedidos de compra
-- Control de relaciones con proveedores
-- Seguimiento de recepciones y facturas
-
-### 📱 Escáner de Productos
-- Escaneo de códigos de barras usando la cámara del dispositivo
-- Agregación automática de productos a ventas existentes
-- Feedback sonoro para confirmación de escaneo
-- Soporte para múltiples formatos de códigos de barras
-
-## � Historia del Proyecto
-
-Este proyecto es la evolución de un prototipo construido en 2022-2023 
-mientras exploraba la arquitectura de aplicaciones móviles offline-first.
+Este proyecto es la evolución de un prototipo construido en 2022-2023 mientras exploraba la arquitectura de aplicaciones móviles offline-first.
 
 - **2022-2023:** Prototipo inicial → [ERPMobile](https://github.com/rennyluzardo/ERPMobile)
 - **2025 – presente:** Reescritura completa con stack moderno y arquitectura escalable
 
-## �🛠️ Stack Tecnológico
+---
 
-### Core Framework
-- **Expo SDK 54** - Plataforma de desarrollo principal
-- **React 19** - Biblioteca de UI
-- **React Native 0.81** - Desarrollo móvil nativo
-- **TypeScript (strict mode)** - Tipado estático y desarrollo seguro
+## ✦ Funcionalidades Core
 
-### Navegación y Routing
-- **Expo Router 6.0.23** - Sistema de routing file-based
-- **React Navigation 7.1.6** - Navegación entre pantallas
-- **React Native Screens 4.16.0** - Optimización de navegación
-- **React Native Safe Area Context 5.6.0** - Manejo de áreas seguras
-
-### Almacenamiento de Datos
-- **expo-sqlite 16.0.10** - Base de datos local SQLite
-- **expo-secure-store 15.0.8** - Almacenamiento seguro de credenciales
-
-### UI y Experiencia de Usuario
-- **React Native Paper 5.14.0** - Componentes de UI Material Design
-- **React Native Reanimated 4.1.1** - Animaciones fluidas
-- **React Native Vector Icons 10.2.0** - Sistema de iconos
-- **Expo Vector Icons 15.0.3** - Iconos adicionales
-
-### Funcionalidades Especializadas
-- **expo-camera 17.0.10** - Acceso a cámara para escaneo
-- **expo-av 16.0.8** - Reproducción de sonido (feedback de escaneo)
-- **expo-font 14.0.11** - Gestión de fuentes personalizadas
-
-### Desarrollo y Testing
-- **Jest 29.2.1** - Framework de testing
-- **jest-expo 54.0.17** - Configuración de Jest para Expo
-- **Babel 7.25.2** - Transpilación JavaScript/TypeScript
-- **TypeScript 5.9.2** - Compilador TypeScript
-
-## 🏗️ Arquitectura del Proyecto
-
-```
-app/
-├── (auth)/           # Flujo de autenticación
-│   ├── loginScreen.tsx
-│   ├── registerScreen.tsx
-│   └── forgotPasswordScreen.tsx
-├── (tabs)/           # Navegación principal
-│   ├── index.tsx     # Home
-│   ├── scannerScreen.tsx    # Escáner de productos
-│   ├── inventoryScreen.tsx  # Gestión de inventario
-│   └── profileScreen.tsx    # Perfil de usuario
-└── _layout.tsx       # Layout principal
-
-components/           # Componentes reutilizables
-├── AuthForm.tsx      # Formularios de autenticación
-├── ProductScanner.tsx # Componente de escaneo
-└── ...
-
-database/            # Capa de datos
-├── index.ts         # Inicialización de SQLite
-├── queries.ts       # Consultas SQL
-└── models/          # Modelos de datos
-
-constants/           # Configuración y estilos
-├── Colors.ts        # Paleta de colores
-├── Fonts.ts         # Configuración de fuentes
-└── Sounds.ts        # Recursos de audio
-
-utils/               # Utilidades
-├── auth.ts          # Funciones de autenticación
-└── database.ts      # Utilidades de base de datos
-```
-
-## 🚀 Configuración y Instalación
-
-### Prerrequisitos
-- Node.js 18+ 
-- npm o yarn
-- Expo CLI
-- Dispositivo iOS/Android o emulador
-
-### Instalación
-
-1. **Clonar el repositorio**
-```bash
-git clone <repository-url>
-cd erp-system
-```
-
-2. **Instalar dependencias**
-```bash
-npm install
-# o
-yarn install
-```
-
-3. **Iniciar el servidor de desarrollo**
-```bash
-npm start
-# o
-expo start
-```
-
-4. **Ejecutar en dispositivo/emulador**
-```bash
-# iOS
-npm run ios
-
-# Android  
-npm run android
-
-# Web
-npm run web
-```
-
-## 📱 Funcionalidades Principales
-
-### 🔐 Autenticación
-<p align="center">
-  <img src="./assets/images/login.png" alt="Pantalla de Login" width="300">
-</p>
-- Registro de usuarios
-- Login seguro
-- Recuperación de contraseña
-- Almacenamiento seguro de tokens
-
-### 🏠 Dashboard
-<p align="center">
-  <img src="./assets/images/home.png" alt="Pantalla Principal" width="300">
-</p>
-- Vista general del negocio
-- Estadísticas rápidas
-- Acceso directo a módulos principales
-
-### 📊 Gestión de Inventario
-- Lista completa de productos
-- Detalles de cada item
-- Control de stock
-- Búsqueda y filtrado
-
-### 📷 Escáner de Barras
-<p align="center">
-  <img src="./assets/images/scanner.png" alt="Escáner de Productos" width="300">
-</p>
-- Activación de cámara
-- Detección automática de códigos
-- Feedback visual y sonoro
-- Integración con ventas
-
-### 💰 Ventas con FIFO
-- Creación de pedidos
-- Escaneo para agregar productos
-- Cálculo automático usando método FIFO
-- Gestión de múltiples ventas
-
-### 👤 Perfil de Usuario
-- Información personal
-- Configuración de la app
-- Historial de actividad
-
-## 🔧 Configuración de Base de Datos
-
-La aplicación utiliza SQLite local con las siguientes tablas principales:
-
-- **users** - Información de usuarios
-- **inventory_items** - Productos y existencias
-- **sales** - Pedidos de venta
-- **sale_items** - Items en cada venta
-- **purchases** - Órdenes de compra
-
-## 📦 Build y Despliegue
-
-### Build para Producción
-```bash
-# iOS
-expo build:ios
-
-# Android
-expo build:android
-```
-
-### Publicación en App Stores
-```bash
-# Submit a App Store
-expo submit --platform ios
-
-# Submit a Google Play
-expo submit --platform android
-```
-
-## 🤝 Contribución
-
-1. Fork del proyecto
-2. Crear feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit cambios (`git commit -m 'Add amazing feature'`)
-4. Push a la branch (`git push origin feature/amazing-feature`)
-5. Abrir Pull Request
-
-## 📄 Licencia
-
-Este proyecto está bajo licencia MIT - ver archivo LICENSE para detalles.
-
-## 📞 Soporte
-
-Para soporte técnico o preguntas sobre el proyecto:
-- Crear issue en el repositorio
-- Contactar al equipo de desarrollo
+| Módulo | Descripción |
+|---|---|
+| 🔐 Autenticación | Login, registro y recuperación de contraseña con tokens en `expo-secure-store` |
+| 📦 Inventario | CRUD completo de productos, control de stock y categorización |
+| 💰 Ventas | Creación de pedidos con cálculo automático FIFO y soporte multi-venta |
+| 📷 Barcode Scanner | Escaneo con cámara, feedback sonoro y agregación automática a ventas |
+| 🛒 Compras | Gestión de órdenes de compra y relaciones con proveedores |
 
 ---
 
-**ERP-System** - La solución móvil completa para la gestión de tu negocio.
+## 📱 Screenshots
+
+<p align="center">
+  <img src="./assets/images/screens-collage.png" alt="ERP System Screenshots" width="100%">
+</p>
+
+---
+
+## 🏗️ Arquitectura
+
+### Stack Tecnológico
+
+**Core**
+- React Native 0.81 + Expo SDK 54
+- TypeScript (strict mode)
+- Expo Router 6 — file-based routing
+
+**Datos**
+- `expo-sqlite` 16 — persistencia local SQLite
+- `expo-secure-store` — almacenamiento cifrado de credenciales
+
+**UI**
+- React Native Paper 5 — componentes Material Design
+- React Native Reanimated 4 — animaciones
+- Expo Vector Icons
+
+**Testing**
+- Jest 29 + jest-expo
+
+---
+
+### Estructura de Carpetas
+
+```
+app/
+├── (auth)/                   # Flujo de autenticación (file-based routing)
+│   ├── loginScreen.tsx
+│   ├── registerScreen.tsx
+│   └── forgotPasswordScreen.tsx
+├── (tabs)/                   # Navegación principal con tab layout
+│   ├── index.tsx             # Dashboard
+│   ├── scannerScreen.tsx
+│   ├── inventoryScreen.tsx
+│   └── profileScreen.tsx
+└── _layout.tsx
+
+components/                   # Componentes reutilizables
+├── AuthForm.tsx
+├── ProductScanner.tsx
+└── ...
+
+database/                     # Capa de datos aislada
+├── index.ts                  # Inicialización y migraciones SQLite
+├── queries.ts                # Queries parametrizadas (sin string interpolation)
+└── models/                   # Tipos e interfaces de entidades
+
+constants/
+├── Colors.ts
+├── Fonts.ts
+└── Sounds.ts
+
+utils/
+├── auth.ts
+└── database.ts
+```
+
+---
+
+## 🧠 Decisiones de Arquitectura
+
+### ¿Por qué SQLite local y no una API remota?
+
+El caso de uso target son negocios con conectividad intermitente (almacenes, tiendas físicas). SQLite garantiza que **todas las operaciones críticas funcionen offline**: crear ventas, escanear productos, actualizar stock. La sincronización con un backend es una capa futura, no un requisito bloqueante.
+
+### ¿Por qué FIFO para el costeo de ventas?
+
+FIFO (First In, First Out) es el estándar contable más adoptado en LATAM para PYMEs. Garantiza que el costo de los productos vendidos refleje el precio real de adquisición en orden cronológico, lo cual es crítico para márgenes precisos en contextos inflacionarios.
+
+### ¿Por qué Expo Router sobre React Navigation puro?
+
+El routing file-based de Expo Router alinea la estructura del proyecto con las rutas de navegación, reduciendo la brecha entre lo que ves en el file system y lo que el usuario navega. Para un ERP con múltiples módulos, esto reduce la deuda cognitiva al crecer el proyecto.
+
+### ¿Por qué `expo-secure-store` para credenciales?
+
+`AsyncStorage` persiste en texto plano. En un contexto empresarial donde el dispositivo puede ser compartido o perdido, almacenar tokens de autenticación en el Keychain (iOS) / Keystore (Android) via `expo-secure-store` es la decisión correcta, no un nice-to-have.
+
+### Queries parametrizadas como regla absoluta
+
+Toda interacción con SQLite usa queries parametrizadas. String interpolation en SQL está prohibida en la capa de datos para eliminar riesgo de SQL injection, incluso en contexto local.
+
+---
+
+## 🗃️ Esquema de Base de Datos
+
+```sql
+users           — autenticación y perfil
+inventory_items — productos, stock y categorías  
+sales           — cabecera de pedidos de venta
+sale_items      — líneas de venta con costeo FIFO
+purchases       — órdenes de compra a proveedores
+```
+
+---
+
+## 🚀 Instalación y Desarrollo
+
+### Prerrequisitos
+
+- Node.js 18+
+- Expo CLI (`npm install -g expo-cli`)
+- Expo Go en dispositivo físico, o emulador iOS/Android
+
+### Setup
+
+```bash
+git clone https://github.com/rennyluzardo/erp-system
+cd erp-system
+npm install
+npx expo start
+```
+
+### Ejecutar en dispositivo
+
+```bash
+# iOS
+npx expo run:ios
+
+# Android
+npx expo run:android
+```
+
+### Build de producción (EAS)
+
+```bash
+# Instalar EAS CLI
+npm install -g eas-cli
+
+# Build Android
+eas build --platform android
+
+# Build iOS
+eas build --platform ios
+```
+
+---
+
+## 🧪 Testing
+
+```bash
+npm test
+```
+
+---
+
+## 📄 Licencia
+
+MIT © [Renny Luzardo](https://github.com/rennyluzardo)
